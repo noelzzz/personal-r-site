@@ -1,27 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Zoom from 'react-reveal/Zoom';
+import HeaderCom from './HeaderCom';
+
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
+    
+    // <div className='container'>
+    //   <ul className='carousel'>
+    //     <li className='item'>
+    //           <img className='albumCover' src={require ('./images/gkmcAlbum.jpeg')}></img>
+    //     </li>
+    //     <li className='item'>
+    //           <img className='albumCover' src={albumImg2} alt='damn.jpg'></img>
+    //     </li>
+    //   </ul>
     // </div>
-    <div>
-      hi there
-    </div>
+
+    <Zoom>
+      <HeaderCom></HeaderCom>
+    </Zoom>
+
+
   );
 }
 
