@@ -2,20 +2,22 @@
   height: 10vh;
   width: 100vw;
   background-color: #A6B2EC;
-  color: white;
+  color: black;
   font-size: 18px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .darkHeader{
   height: 10vh;
   width: 100vw;
   background-color: #333456;
-  color: #E5E5E5;
+  color: white;
   font-size: 18px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .name{
@@ -29,13 +31,20 @@
 }
 
 .themeButton{
-    width: fit-content;
+  width: fit-content;
   height: fit-content;
   /*padding: 5px;
   font-weight: bold; */ 
-  color: white;
+  color: black;
   /* background-color: #333456;
   border-radius: 10px; */
-  margin: auto 1vw;
+  margin: auto 4vw;
   float: right;
+}
+
+.dayNightButton{
+  padding: 0;
+border: none;
+background: none;
+
 }

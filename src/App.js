@@ -1,28 +1,31 @@
 import './App.css';
 import Zoom from 'react-reveal/Zoom';
 import HeaderCom from './HeaderCom';
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+// import { GlobalStyles } from './Components/global';
+import { StyledButton } from './Components/Button.style';
 
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  const updateTheme = () => {
+    setDarkMode(previous=>!previous)
+  }
+
   return (
+    <>
+    {/* <GlobalStyles /> */}
     
-    // <div className='container'>
-    //   <ul className='carousel'>
-    //     <li className='item'>
-    //           <img className='albumCover' src={require ('./images/gkmcAlbum.jpeg')}></img>
-    //     </li>
-    //     <li className='item'>
-    //           <img className='albumCover' src={albumImg2} alt='damn.jpg'></img>
-    //     </li>
-    //   </ul>
-    // </div>
-
     <Zoom>
-      <HeaderCom></HeaderCom>
-    </Zoom>
 
 
-  );
+      <HeaderCom theme={darkMode} changeTheme={updateTheme} />
+      {/* <StyledButton buttonLabel="Click Here" backgroundColor="violet" onClick={toggleTheme}></StyledButton> */}
+
+    </Zoom></>
+      );
 }
 
 export default App;
