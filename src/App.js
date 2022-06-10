@@ -16,7 +16,6 @@ function App() {
 
   return (
     <>
-    {/* <GlobalStyles /> */}
     
     <Zoom>
 
@@ -24,8 +23,10 @@ function App() {
       <HeaderCom theme={darkMode} changeTheme={updateTheme} />
       {/* <StyledButton buttonLabel="Click Here" backgroundColor="violet" onClick={toggleTheme}></StyledButton> */}
 
-    </Zoom></>
-      );
+    </Zoom>
+    
+    </>
+  );
 }
 
 export default App;
