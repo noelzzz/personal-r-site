@@ -1,10 +1,8 @@
 import './App.css';
-import Zoom from 'react-reveal/Zoom';
-import HeaderCom from './HeaderCom';
+import HeaderCom from './Components/HeaderCom';
 import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
-// import { GlobalStyles } from './Components/global';
-import { StyledButton } from './Components/Button.style';
+import { GlobalStyles } from './Components/global';
+import Hero from './Components/hero';
 
 
 function App() {
@@ -16,15 +14,11 @@ function App() {
 
   return (
     <>
-    
-    <Zoom>
 
-
+      <GlobalStyles />
       <HeaderCom theme={darkMode} changeTheme={updateTheme} />
-      {/* <StyledButton buttonLabel="Click Here" backgroundColor="violet" onClick={toggleTheme}></StyledButton> */}
+      {/* <Hero /> */}
 
-    </Zoom>
-    
     </>
   );
 }

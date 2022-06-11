@@ -1,6 +1,6 @@
 import { useSpring } from 'react-spring';
 import { animated } from 'react-spring';
-import styled from 'styled-components'
+
 
 function DayNightIcon(props) {
 
@@ -45,8 +45,8 @@ function DayNightIcon(props) {
     return(
         <animated.svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="32"
+            height="32"
             justify-content="center"
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -55,7 +55,7 @@ function DayNightIcon(props) {
             stroke-linecap="round"
             stroke-linejoin="round"
             onClick={handleClick}
-            style={{cursor: "pointer",
+            style={{cursor: "pointer", margin: "auto 1vw",
             ...svgContainerProps 
         }}     
         > 

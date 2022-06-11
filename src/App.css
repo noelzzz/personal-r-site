@@ -1,50 +1,44 @@
+@font-face {
+  font-family: 'Syne', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
+}
+
+
+body{
+  font-family: 'Syne';
+  font-weight: 700;
+}
+
+
 .lightHeader{
   height: 10vh;
   width: 100vw;
-  background-color: #A6B2EC;
+  /* background-color: #E5EAFA; */
+  background-color: #edede9;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  transition: all .2s linear;
 }
 
 .darkHeader{
   height: 10vh;
   width: 100vw;
-  background-color: #333456;
+  /* background-color: #333456; */
+  /* background-color: #0d1b2a; */
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  transition: all .2s linear;
 }
 
-.name{
+
+.headerItem{
   float: left;
   margin: auto 1vw;
-}
-
-.siteTitle{
-  float: right;
-  margin: auto 1vw; 
-}
-
-.themeButton{
-  width: fit-content;
-  height: fit-content;
-  /*padding: 5px;
-  font-weight: bold; */ 
-  color: black;
-  /* background-color: #333456;
-  border-radius: 10px; */
-  margin: auto 4vw;
-  float: right;
-}
-
-.dayNightButton{
-  padding: 0;
-border: none;
-background: none;
-
+  cursor: pointer;
 }
