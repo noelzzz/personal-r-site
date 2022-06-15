@@ -1,19 +1,23 @@
-// import styled from "styled-components";
-// import HeaderCom from "../HeaderCom";
+import styled from "styled-components";
 
-// const styledHeaderCom = styled(HeaderCom)`
-//     height: 10vh;
-//   width: 100vw;
-//   /* background-color: #E5EAFA; */
-//   background-color: #edede9;
-//   color: black;
-//   font-size: 20px;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   transition: all .2s linear;
-// `;
+// import HeaderCom from "../Components/HeaderCom";
+
+const styledHeaderCom = styled.div`
+    height: 10vh;
+    width: 100%;
+    /* background-color: ${(props) => props.theme.header};
+    color: ${(props) => props.theme.fontColor}; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all .2s linear;
+    border: none;
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+`;
 
 
 
-// export default styledHeaderCom;
+export default styledHeaderCom;
