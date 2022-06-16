@@ -7,6 +7,8 @@ import {lightTheme, darkTheme} from './themes'
 // import {BrowserRouter as Router} from 'react-router-dom'
 import { Container } from './styles/Container.style';
 import Hero from './Components/hero';
+// import Fade from 'react-reveal/Fade';
+import 'animate.css'
 
 
 
@@ -22,11 +24,15 @@ function App() {
       <>
       <GlobalStyles mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
       
+      {/* <Fade top cascade> */}
       <Container mode={darkMode} theme={darkMode ? darkTheme : lightTheme}>
+
         <HeaderCom changeTheme={updateTheme}  mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
-        <Hero></Hero>
+        
+        <Hero />
+        
       </Container>
-      
+      {/* </Fade> */}
     
       
       

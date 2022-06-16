@@ -16,6 +16,7 @@ const styledHeaderCom = styled.div`
     box-sizing: border-box;
     padding: none;
     margin: none;
+    font-weight: 700;
 `;
 
 

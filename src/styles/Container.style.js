@@ -11,4 +11,6 @@ export const Container = styled.div`
     height: 110vh;
     background-color: ${(props) => props.theme.header};
     transition: all .2s linear;
+    /* border: 1px solid${(props) => props.theme.fontColor}; */
+    border-radius: 4px;
 `
