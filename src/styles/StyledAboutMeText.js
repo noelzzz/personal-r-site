@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutMeText = styled.div`
-    width: 35vw;
+    width: 36vw;
     height: fit-content;
     padding: 2%;
     line-height: 2.5;

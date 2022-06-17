@@ -1,18 +1,35 @@
 // import styledHeaderCom from '../styles/styledHeaderCom';
 import StyledHeaderCom from '../styles/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
+import { Fade } from 'react-reveal';
 
 
 function HeaderCom(props) {
     return(
     <>
-        <StyledHeaderCom theme={props.theme}>
-            <div className='headerItem'>Noel Alfaro</div>
-            <div className='headerItem'>Projects</div>
-            <div className='headerItem'>About</div>
-            <div className='headerItem'>Contact</div>
-            <DayNightIcon mode={props.mode} changeTheme={props.changeTheme}/>
-        </StyledHeaderCom>
+            <StyledHeaderCom theme={props.theme}>
+
+            <Fade>
+                <div className='itemContainer'>
+                    <div className='headerItem'>Noel Alfaro</div>
+                    <div className='headerItem'>Projects</div>
+                    <div className='headerItem'>About</div>
+                    <div className='headerItem'>Contact</div>
+                </div>
+               
+
+                <div className='iconContainer'>
+                    <DayNightIcon mode={props.mode} changeTheme={props.changeTheme}/>
+                </div>
+                
+        
+            </Fade>
+                
+           
+            
+            
+            </StyledHeaderCom>
+        
         
         
         

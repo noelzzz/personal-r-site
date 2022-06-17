@@ -10,13 +10,17 @@ const styledHeaderCom = styled.div`
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     transition: all .2s linear;
     border: none;
     box-sizing: border-box;
     padding: none;
     margin: none;
     font-weight: 700;
+    position: fixed;
+    /* border-bottom: .25px solid ${(props) => props.theme.fontColor}; */
+    background-color: ${(props) => props.theme.header};;
+    z-index: 10;
 `;
 
 

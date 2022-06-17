@@ -7,9 +7,10 @@ export const StyledHero = styled.div`
     display: flex;
     justify-content: center;
     /* padding: 25px; */
-    height: 85vh;
+    height: 90vh;
     width: 95vw;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     border-radius: 4px;
     padding: 20px;
+    position: relative;
 `

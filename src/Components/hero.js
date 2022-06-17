@@ -34,9 +34,9 @@ function Hero(props) {
                 <AboutMeText>
                     
                     <Fade top cascade>
-                        <h1>Hello There</h1>
-                    Lorem ipsum dolor jJ sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
-                    Neque convallis a cras sempe
+                        <h1>Hello there,</h1>
+                    {/* Lorem ipsum dolor jJ sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
+                    Neque convallis a cras sempe */}My name is Noel & welcome to my page. Here I showcase some of my work as a Front End Software Engineer and UI/UX Designer.
                     </Fade>
                 
                     

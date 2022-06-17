@@ -40,6 +40,38 @@
 }
 
 
+.iconContainer{
+  float: right;
+  justify-content: flex-end;
+  width: fit-content;
+  height: fit-content;
+  /* padding: 1%; */
+  margin: auto 1vw;
+  /* margin-top: 20px; */
+  /* padding: auto; */
+}
+
+.itemContainer{
+    height: 10vh;
+    width: 100%;
+    /* background-color: ${(props) => props.theme.header};
+    color: ${(props) => props.theme.fontColor}; */
+    font-size: 20px;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start; */
+    word-wrap: break-word;
+    flex-wrap: nowrap;
+    transition: all .2s linear;
+    border: none;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin: none;
+    font-weight: 700;
+    position: relative;
+}
+
+
 .hero{
   width: 100vh;
   margin: auto;
@@ -48,4 +80,10 @@
   display: block;
   padding: 20%;
  
+}
+
+
+.project1{
+  width: 200vw;
+  overflow-x: scroll;
 }
