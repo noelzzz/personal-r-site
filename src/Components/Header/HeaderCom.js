@@ -1,5 +1,5 @@
 // import styledHeaderCom from '../styles/styledHeaderCom';
-import StyledHeaderCom from '../styles/StyledHeaderCom';
+import StyledHeaderCom from '../../styles/Header/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 

@@ -1,15 +1,15 @@
 import './App.css';
-import HeaderCom from './Components/HeaderCom';
+import HeaderCom from './Components/Header/HeaderCom';
 import React, { useState } from 'react';
-import { GlobalStyles } from './Components/global';
+import { GlobalStyles } from './styles/global';
 import {lightTheme, darkTheme} from './themes'
 
 
 import { Container } from './styles/Container.style';
-import Hero from './Components/hero';
+import Hero from './Components/Hero/hero';
 
 import 'animate.css'
-import Projects from './Components/projects';
+import Projects from './Components/Projects/projects';
 
 
 
@@ -23,28 +23,19 @@ function App() {
 
   return (
       <>
+
       <GlobalStyles mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
       
-      {/* <Fade top cascade> */}
       <Container mode={darkMode} theme={darkMode ? darkTheme : lightTheme}>
 
         <HeaderCom changeTheme={updateTheme}  mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
         
         <Hero />
 
-        <Projects />
-
-
+        <Projects mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
         
       </Container>
-      {/* </Fade> */}
-    
       
-      
-
-
-      
-  
       </>
   );
 }
