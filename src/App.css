@@ -3,36 +3,6 @@
   src: url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
 }
 
-
-
-
-.lightHeader{
-  height: 10vh;
-  width: 100vw;
-  /* background-color: #E5EAFA; */
-  background-color: #edede9;
-  color: black;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  transition: all .2s linear;
-}
-
-.darkHeader{
-  height: 10vh;
-  width: 100vw;
-  /* background-color: #333456; */
-  /* background-color: #0d1b2a; */
-  color: white;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  transition: all .2s linear;
-}
-
-
 .headerItem{
   float: left;
   margin: auto 1vw;
@@ -45,10 +15,7 @@
   justify-content: flex-end;
   width: fit-content;
   height: fit-content;
-  /* padding: 1%; */
   margin: auto 1vw;
-  /* margin-top: 20px; */
-  /* padding: auto; */
 }
 
 .itemContainer{
@@ -72,18 +39,39 @@
 }
 
 
-.hero{
+/* .hero{
   width: 100vh;
   margin: auto;
   font-weight: 500;
   line-height: 2.5;
   display: block;
   padding: 20%;
- 
-}
+} */
 
 
-.project1{
-  width: 200vw;
-  overflow-x: scroll;
+/*
+.lightHeader{
+  height: 10vh;
+  width: 100vw;
+  background-color: #E5EAFA;
+  background-color: #edede9;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  transition: all .2s linear;
 }
+
+.darkHeader{
+  height: 10vh;
+  width: 100vw;
+  background-color: #333456;
+  background-color: #0d1b2a;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  transition: all .2s linear;
+} */

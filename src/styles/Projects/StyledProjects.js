@@ -8,6 +8,10 @@ export const StyledProjects = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    vertical-align: middle;
+    transition: inherit;
+    box-sizing: border-box;
+    /* background-color: ${(props) => props.theme.header}; */
     overflow-x: scroll;
 
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
