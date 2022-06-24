@@ -10,7 +10,7 @@ export const ProjectsDescription = styled.div`
     width: 50%;
 
     /* background-color: aliceblue; */
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
 
 
     h1{

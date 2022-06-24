@@ -8,12 +8,12 @@ export const StyledProjectsGallery = styled.div`
     justify-content: flex-start;
     justify-content: space-between;
     align-items: center;
-    background-color: ${(props) => props.theme.header};
+    background-color: ${(props) => props.theme.backgroundColor};
     transition: all .2s linear;
     box-sizing: border-box;
     position: relative;
     z-index: 5;
     padding: 1%;
-    border: 2px solid ${(props) => props.theme.fontColor};
+    /* border: 2px solid ${(props) => props.theme.fontColor}; */
     
 `

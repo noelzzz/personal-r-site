@@ -19,7 +19,7 @@ function HeaderCom(props) {
                
 
                 <div className='iconContainer'>
-                    <DayNightIcon mode={props.mode} changeTheme={props.changeTheme}/>
+                    <DayNightIcon mode={props.mode} changeMode={props.changeMode}/>
                 </div>
                 
         

@@ -4,9 +4,19 @@ import { ProjectsDescription } from '../../styles/StyledProjectsSection/Projects
 import { ProjectContainer } from '../../styles/StyledProjectsSection/ProjectContainer.style';
 import { StyledProject } from '../../styles/StyledProjectsSection/StyledProject';
 
-export default function Project5() {
+export default function Project5(props) {
+
+  const handleMouseEnter = () =>{
+    props.changeColorTheme('project5')
+  }
+  
+  const handleMouseLeave = () =>{
+    props.changeThemeLeave()
+  }
+
+
   return (
-    <StyledProject backgroundColor="#5e548e">
+    <StyledProject backgroundColor="#5e548e" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/feelSpecial.jpg")} alt="feelSpecial.jpeg" height={300} width={300}/>
             <ProjectsDescription>Test description 5</ProjectsDescription>

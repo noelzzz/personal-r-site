@@ -9,20 +9,29 @@ import { Fade } from 'react-reveal';
 // import styled from 'styled-components';
 
 export default function ProjectsGallery(props) {
+
+  // const changeColorTheme= () =>{
+  //   props.changeColorTheme()
+  // }
+
+  // const changeThemeLeave= () =>{
+  //   props.changeThemeLeave()
+  // }
+
   return (
     <Fade cascade>
       <StyledProjectsGallery>
 
         {/* <StyledProject1/> */}
-        <Project1 className='p1'/>
+        <Project1 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject2/> */}
-        <Project2/>
+        <Project2 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject3/> */}
-        <Project3/>
+        <Project3 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject4/> */}
-        <Project4/>
+        <Project4 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject5/> */}
-        <Project5/>
+        <Project5 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
 
       </StyledProjectsGallery>
     </Fade>

@@ -9,7 +9,7 @@ export const AboutMeText = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     align-items: center;    
 
     h1{

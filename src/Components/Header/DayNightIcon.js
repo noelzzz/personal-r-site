@@ -31,7 +31,7 @@ function DayNightIcon(props) {
     ];
 
     const handleClick = () => {
-        props.changeTheme()
+        props.changeMode()
     }
 
 

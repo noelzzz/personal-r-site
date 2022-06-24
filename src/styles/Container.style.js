@@ -9,7 +9,8 @@ export const Container = styled.div`
     box-sizing: border-box;
     padding: 0;
     height: 110vh;
-    background-color: ${(props) => props.theme.header};
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
+    /* background-color: blue; */
     transition: all .2s linear;
     /* background-color: red; */
     /* border: 1px solid${(props) => props.theme.fontColor}; */

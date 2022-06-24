@@ -8,6 +8,26 @@ import { HeroContainer } from '../../styles/Hero/HeroContainer';
 
 
 function HeroSection(props) {
+
+
+    // const handleMouseEnter =()=>{
+    //     props.changeColorTheme('project1')
+    // }
+
+    // const handleMouseLeave =()=>{
+    //     props.changeThemeLeave()
+    // }
+
+
+
+    // const handleImageEnter=()=>{
+    //     props.changeColorTheme('project2')
+    // }
+
+    // const handleImageLeave=()=>{
+    //     props.changeThemeLeave()
+
+    // }
     return ( 
         <StyledHeroSection>
            

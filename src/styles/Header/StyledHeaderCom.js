@@ -18,8 +18,7 @@ const StyledHeaderCom = styled.div`
     margin-top:none;
     font-weight: 700;
     position: fixed;
-    /* border-bottom: .25px solid ${(props) => props.theme.fontColor}; */
-    background-color: ${(props) => props.theme.header};;
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
     z-index: 10;
 `;
 

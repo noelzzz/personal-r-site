@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const HeroImage = styled.div`
     width: fit-content;
     height: fit-content;

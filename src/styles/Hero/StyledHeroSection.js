@@ -10,7 +10,7 @@ export const StyledHeroSection = styled.div`
     /* padding: 25px; */
     height: 100vh;
     width: 100vw;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     border-radius: 4px;
     padding: 20px;
     /* position: rel; */

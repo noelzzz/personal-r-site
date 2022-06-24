@@ -3,10 +3,19 @@ import {StyledProjectsSection} from '../../styles/StyledProjectsSection/StyledPr
 import ProjectsGallery from './ProjectsGallery';
 
 export default function ProjectsSection(props) {
+
+  // const changeColorTheme=()=>{
+  //   props.changeColorTheme('project3')
+  // }
+
+  // const changeThemeLeave=()=>{
+  //   props.changeThemeLeave()
+  // }
+
   return (
     <StyledProjectsSection>
         
-      <ProjectsGallery></ProjectsGallery>
+      <ProjectsGallery changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}></ProjectsGallery>
  
     </StyledProjectsSection>
   )
