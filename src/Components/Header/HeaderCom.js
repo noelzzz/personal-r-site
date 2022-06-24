@@ -9,7 +9,7 @@ function HeaderCom(props) {
     <>
             <StyledHeaderCom theme={props.theme}>
 
-            <Fade>
+            <Fade duration="2000">
                 <div className='itemContainer'>
                     <div className='headerItem'>Noel Alfaro</div>
                     <div className='headerItem'>Projects</div>

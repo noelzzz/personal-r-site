@@ -1,16 +1,28 @@
 import styled from "styled-components";
 
 export const AboutMeText = styled.div`
-    width: 36vw;
-    height: fit-content;
-    padding: 2%;
-    line-height: 2.5;
+    width: 450px;
+    min-width: 350px;
+    height: 350px;
+    padding: 5px;
+    line-height: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
-    align-items: center;
-    margin-left: 35px;
-    flex-wrap: nowrap;
+    justify-content: center;
+    border: 1px solid ${(props) => props.theme.fontColor};
+    align-items: center;    
+
+    h1{
+        line-height: 1;
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+        align-items: center;
+    }
+
+    /* p{
+        border: 1px solid ${(props) => props.theme.fontColor};
+        line-height: 2;
+    } */
+    
+
 
 `

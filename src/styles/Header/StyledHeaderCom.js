@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // import HeaderCom from "../Components/HeaderCom";
 
-const styledHeaderCom = styled.div`
+const StyledHeaderCom = styled.div`
     height: 10vh;
     width: 100%;
     /* background-color: ${(props) => props.theme.header};
@@ -15,7 +15,7 @@ const styledHeaderCom = styled.div`
     border: none;
     box-sizing: border-box;
     padding: none;
-    margin: none;
+    margin-top:none;
     font-weight: 700;
     position: fixed;
     /* border-bottom: .25px solid ${(props) => props.theme.fontColor}; */
@@ -25,4 +25,4 @@ const styledHeaderCom = styled.div`
 
 
 
-export default styledHeaderCom;
+export default StyledHeaderCom;

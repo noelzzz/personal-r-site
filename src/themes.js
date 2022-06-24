@@ -1,6 +1,6 @@
 export const lightTheme = {
     header: '#edede9',
-    fontColor: '#000'
+    fontColor: '#0A0A0A'
 }
 
 export const darkTheme = {

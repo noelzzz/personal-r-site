@@ -14,6 +14,6 @@ export const StyledProjectsGallery = styled.div`
     position: relative;
     z-index: 5;
     padding: 1%;
-    /* border: 2px solid ${(props) => props.theme.fontColor}; */
+    border: 2px solid ${(props) => props.theme.fontColor};
     
 `

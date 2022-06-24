@@ -4,16 +4,20 @@ export const HeroImage = styled.div`
     width: fit-content;
     height: fit-content;
     /* padding: 2%; */
-    line-height: 2.5;
+    /* line-height: 2.5; */
     display: flex;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    justify-content: center;
     align-items: center;
-    /* margin: 5px; */
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    /* align-items: center; */
+    /* margin-left: 50px; */
     /* color: blue; */
-    background-image: url(../images/damnAlbum.jpeg);
+    /* background-image: url(../images/damnAlbum.jpeg); */
     
 
     img{
         border-radius: 5px;
+        width: 300px;
+        height: 300px;
     }
 `

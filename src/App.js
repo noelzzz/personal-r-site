@@ -6,10 +6,10 @@ import {lightTheme, darkTheme} from './themes'
 
 
 import { Container } from './styles/Container.style';
-import Hero from './Components/Hero/hero';
+import HeroSection from './Components/Hero/HeroSection';
 
 import 'animate.css'
-import Projects from './Components/Projects/projects';
+import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 
 
 
@@ -30,9 +30,9 @@ function App() {
 
         <HeaderCom changeTheme={updateTheme}  mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
         
-        <Hero />
+        <HeroSection />
 
-        <Projects mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
+        <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/>
         
       </Container>
       

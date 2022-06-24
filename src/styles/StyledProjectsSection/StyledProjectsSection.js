@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const StyledProjects = styled.div`
+export const StyledProjectsSection = styled.div`
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -14,7 +14,7 @@ export const StyledProjects = styled.div`
     /* background-color: ${(props) => props.theme.header}; */
     overflow-x: scroll;
 
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    border: 1px solid ${(props) => props.theme.fontColor};
 
 
     -ms-overflow-style: none;  //Internet Explorer 10+
