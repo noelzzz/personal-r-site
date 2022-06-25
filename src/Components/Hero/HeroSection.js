@@ -45,7 +45,7 @@ function HeroSection(props) {
                         <h1>Hello there,</h1>
                     </Fade>
                     <Fade cascade>
-                        My name is Noel & welcome to my page. Here I showcase <br/>some of my work as a Front End Software <br /> Engineer and UI/UX Designer.
+                        My name is Noel & welcome to my page. Here I showcase <br/>some of my work as a Front-End Software Engineer <br /> and UI/UX Designer.
                     </Fade>
                 </AboutMeText>
             </HeroContainer>

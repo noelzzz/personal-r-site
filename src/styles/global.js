@@ -22,4 +22,13 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
+  a{
+  /* text-decoration: none; */
+  color: ${(props) => props.theme.fontColor};
+  }
+
+  a:hover{
+    /* text-decoration: underline; */
+  }
+
 `

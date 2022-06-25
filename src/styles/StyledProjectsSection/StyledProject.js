@@ -16,6 +16,15 @@ export const StyledProject = styled.div`
     border-radius: 12px;
     transition: all .2s linear;
     /* transition: transform 1s ease-in-out; */
+    
+    a{
+  /* text-decoration: none; */
+        color: ${(props) => props.theme.fontColor};
+    }
+
+    img{
+        border-radius: 6px;
+    }
 
     &:hover{
         transform: scale(104%);
@@ -24,13 +33,18 @@ export const StyledProject = styled.div`
         cursor: pointer;
         box-shadow:
                 1px 1px #0A0A0A,
-                2px 2px #0A0A0A,
+                3px 3px #0A0A0A,
                 3px 3px #0A0A0A;
 
         img{
-            transform: scale(96%);
+            /* transform: scale(101%); */
             transition: transform .2s ease-in-out;
         }      
+
+        a{
+  /* text-decoration: none; */
+        color: ${(props) => props.theme.fontColor};
+    }
     }
     
 `
