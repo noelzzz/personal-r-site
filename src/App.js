@@ -30,7 +30,7 @@ function App() {
 
 
     if(project==='project1'){
-      setCurrentTheme(project1Theme)
+        setCurrentTheme(project1Theme)
     }
     if(project==='project2'){
       setCurrentTheme(project2Theme)
@@ -68,19 +68,15 @@ function App() {
 
   return (
       <>
-
-      {/* <GlobalStyles mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/> */}
       <GlobalStyles mode={darkMode} theme={currentTheme}/>
       
-      <Container >
-      {/* <Container mode={darkMode} theme={currentTheme}> */}
+      <Container>
 
-        {/* <HeaderCom changeTheme={updateTheme}  mode={darkMode} theme={darkMode ? darkTheme : lightTheme}/> */}
         <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
         
         <HeroSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} />
 
-        <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave}/>
+        <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
         
       </Container>
       

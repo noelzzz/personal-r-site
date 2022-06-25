@@ -15,14 +15,22 @@ export const StyledProject = styled.div`
     /* color: ${(props) => props.theme.fontColor}; */
     border-radius: 12px;
     transition: all .2s linear;
-    transition: transform 0.2s ease-in-out;
+    /* transition: transform 1s ease-in-out; */
 
     &:hover{
-        /* transform: scale(101%); */
+        transform: scale(104%);
         transition: transform .1s ease-in-out;
-        border: 1px solid ${(props) => props.theme.fontColor};
+        border: 1.5px solid ${(props) => props.theme.fontColor};
         cursor: pointer;
-    }
+        box-shadow:
+                1px 1px #0A0A0A,
+                2px 2px #0A0A0A,
+                3px 3px #0A0A0A;
 
+        img{
+            transform: scale(96%);
+            transition: transform .2s ease-in-out;
+        }      
+    }
     
 `

@@ -18,29 +18,31 @@ export const noelsTheme ={
 
 
 export const project1Theme={
-    backgroundColor:'#eb4034',
+    // backgroundColor:'#eb4034',
+    backgroundColor: '#c81d25',
     fontColor:'#000'
 }
 
 
 export const project2Theme={
-    backgroundColor:'#3DDC84'
+    backgroundColor:'#9EE493'
 }
 
 
 export const project3Theme={
-    backgroundColor:'#f5b700',
+    // backgroundColor:'#f5b700',
+    backgroundColor: '#F4D06F',
     fontColor:'#000'
 }
 
 
 export const project4Theme={
-    backgroundColor:'#fb5607'
+    backgroundColor:'#EAE8FF'
 }
 
 export const project5Theme={
-    backgroundColor:'#5e548e',
-    fontColor:'#edede9'
+    backgroundColor:'#CCAD8F',
+    fontColor:'#000'
 }
 
 

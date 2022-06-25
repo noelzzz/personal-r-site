@@ -14,10 +14,11 @@ export default function Project2(props) {
     props.changeThemeLeave()
   }
 
+  // backgroundColor="#9EE493"
 
   return (
     <>
-    <StyledProject backgroundColor="#3DDC84" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledProject onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/lonelyHearts.jpg")} alt="lonelyHearts.jpeg" height={300} width={300}/>
             <ProjectsDescription>Test description 2</ProjectsDescription>

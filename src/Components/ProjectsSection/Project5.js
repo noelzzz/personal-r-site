@@ -14,9 +14,10 @@ export default function Project5(props) {
     props.changeThemeLeave()
   }
 
+// backgroundColor="#EAE8FF"
 
   return (
-    <StyledProject backgroundColor="#5e548e" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/feelSpecial.jpg")} alt="feelSpecial.jpeg" height={300} width={300}/>
             <ProjectsDescription>Test description 5</ProjectsDescription>

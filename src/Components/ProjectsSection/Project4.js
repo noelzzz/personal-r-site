@@ -15,8 +15,10 @@ export default function Project4(props) {
   }
 
 
+  // backgroundColor="#26619C"
+  
   return (
-    <StyledProject backgroundColor="#fb5607" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/tooLate.jpg")} alt="tooLate.jpeg" height={300} width={300}/>
             <ProjectsDescription>Test description 4</ProjectsDescription>

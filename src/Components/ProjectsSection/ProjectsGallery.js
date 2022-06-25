@@ -6,24 +6,17 @@ import Project3 from './Project3';
 import Project4 from './Project4';
 import Project5 from './Project5'
 import { Fade } from 'react-reveal';
+// import { darkTheme } from '../../themes';
 // import styled from 'styled-components';
 
 export default function ProjectsGallery(props) {
-
-  // const changeColorTheme= () =>{
-  //   props.changeColorTheme()
-  // }
-
-  // const changeThemeLeave= () =>{
-  //   props.changeThemeLeave()
-  // }
-
+  
   return (
     <Fade cascade>
       <StyledProjectsGallery>
 
         {/* <StyledProject1/> */}
-        <Project1 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
+        <Project1 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave} darktheme={props.darkTheme} currentTheme={props.currentTheme}/>
         {/* <StyledProject2/> */}
         <Project2 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject3/> */}

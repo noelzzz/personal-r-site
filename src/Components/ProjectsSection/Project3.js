@@ -13,9 +13,12 @@ export default function Project3(props) {
   const handleMouseLeave = () =>{
     props.changeThemeLeave()
   }
-
+  
+  
+  // backgroundColor="#F4D06F"
+  
   return (
-    <StyledProject backgroundColor="#f5b700" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/mbdtf.jpg")} alt="mbdtf.jpeg" height={300} width={300}/>
             <ProjectsDescription>Test description 3</ProjectsDescription>

@@ -4,18 +4,10 @@ import ProjectsGallery from './ProjectsGallery';
 
 export default function ProjectsSection(props) {
 
-  // const changeColorTheme=()=>{
-  //   props.changeColorTheme('project3')
-  // }
-
-  // const changeThemeLeave=()=>{
-  //   props.changeThemeLeave()
-  // }
-
   return (
     <StyledProjectsSection>
         
-      <ProjectsGallery changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}></ProjectsGallery>
+      <ProjectsGallery changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave} darkTheme={props.darkTheme} currentTheme={props.currentTheme}></ProjectsGallery>
  
     </StyledProjectsSection>
   )

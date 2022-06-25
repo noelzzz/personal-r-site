@@ -3,6 +3,7 @@ import React from 'react'
 import { ProjectsDescription } from '../../styles/StyledProjectsSection/ProjectsDescription.Style';
 import { ProjectContainer } from '../../styles/StyledProjectsSection/ProjectContainer.style';
 import { StyledProject } from '../../styles/StyledProjectsSection/StyledProject';
+// import { darkTheme } from '../../themes';
 // import { project1Theme } from '../../themes';
 
 
@@ -16,10 +17,9 @@ const handleMouseLeave = () =>{
   props.changeThemeLeave()
 }
 
-
   return (
     <>
-    <StyledProject backgroundColor="#eb4034" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledProject onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <ProjectContainer >
         <img src={require("../../images/damnAlbum.jpeg")} alt="damnAlbum.jpeg" height={300} width={300}/>
         <ProjectsDescription><h1>Damn.</h1><br /> This is an album by Kendrick Lamar released in 2017</ProjectsDescription>
