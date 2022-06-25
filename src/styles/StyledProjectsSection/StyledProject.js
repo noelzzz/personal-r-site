@@ -34,7 +34,7 @@ export const StyledProject = styled.div`
         box-shadow:
                 1px 1px #0A0A0A,
                 3px 3px #0A0A0A,
-                3px 3px #0A0A0A;
+                4px 4px #0A0A0A;
 
         img{
             /* transform: scale(101%); */
@@ -44,6 +44,7 @@ export const StyledProject = styled.div`
         a{
   /* text-decoration: none; */
         color: ${(props) => props.theme.fontColor};
+        /* transition: transform .1s ease-in-out; */
     }
     }
     

@@ -27,8 +27,5 @@ export const GlobalStyles = createGlobalStyle`
   color: ${(props) => props.theme.fontColor};
   }
 
-  a:hover{
-    /* text-decoration: underline; */
-  }
 
 `

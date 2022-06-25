@@ -25,7 +25,7 @@ const handleMouseLeave = () =>{
         <ProjectsDescription>
           <ProjectTitle>Project Belmont</ProjectTitle>
           <ProjectDetails>This is a project management tool meant to teach & guide users on building a project with an agile mindset.</ProjectDetails> 
-          <CreditLine>Built using React.js in collaboration with <a id='braynDiazCredit' href='https://github.com/bddiaz'>Bryan Diaz</a> </CreditLine>
+          <CreditLine>Built using React.js in collaboration with <a  href='https://github.com/bddiaz'>Bryan Diaz</a> </CreditLine>
         </ProjectsDescription>
       </ProjectContainer>
       
@@ -55,4 +55,9 @@ const CreditLine = styled.p`
   width: 80%;
   margin: 0;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
+
+
+  a{
+
+  }
 `
