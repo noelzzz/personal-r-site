@@ -6,7 +6,10 @@ export default function AboutSection() {
 
     <AboutContainer>
         About Container 
-        <Resume> Resume </Resume>
+        <Resume> Resume 
+
+            <ResumeExperience/>
+        </Resume>
     </AboutContainer>
 
 
@@ -28,10 +31,16 @@ const Resume = styled.div`
     display: flex;
     height: 80%;
     width: 90%;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    
     /* justify-content: center; */
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
-
 `
+
+
+const ResumeExperience = styled.div`
+    height: 80%;
+    width: 40%;
+    border: 1px solid ${(props) => props.theme.fontColor};
+`
+
