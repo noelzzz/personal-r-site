@@ -11,6 +11,8 @@ import HeroSection from './Components/Hero/HeroSection';
 import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 
+import AboutSection from './Components/AboutSection/AboutSection';
+
 
 
 
@@ -77,6 +79,8 @@ function App() {
         <HeroSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} />
 
         <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+
+        <AboutSection/>
         
       </Container>
       
