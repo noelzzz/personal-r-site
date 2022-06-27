@@ -35,7 +35,7 @@ function HeroSection(props) {
             <HeroContainer>
                     
                 <HeroImage>
-                    <Fade duration="2000" cascade>
+                    <Fade cascade>
                         <img src={require("../../images/gkmcAlbum.jpeg")} alt="gkmcAlbum.jpeg"/>
                     </Fade>
                 </HeroImage>
