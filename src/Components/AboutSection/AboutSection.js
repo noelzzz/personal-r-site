@@ -5,9 +5,11 @@ export default function AboutSection() {
   return (
 
     <AboutContainer>
+        
         About Container 
-        <Resume> Resume 
+        <Resume>
 
+            <ResumeExperience/>
             <ResumeExperience/>
         </Resume>
     </AboutContainer>
@@ -31,15 +33,15 @@ const Resume = styled.div`
     display: flex;
     height: 80%;
     width: 90%;
-    
-    /* justify-content: center; */
+    border: 1px solid ${(props) => props.theme.fontColor};
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 `
 
 
 const ResumeExperience = styled.div`
-    height: 80%;
+    height: 90%;
     width: 40%;
     border: 1px solid ${(props) => props.theme.fontColor};
 `
