@@ -22,7 +22,7 @@ export default function Project3(props) {
   return (
     <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
-            <img src={require("../../images/mbdtf.jpg")} alt="mbdtf.jpeg" height={300} width={300}/>
+            <img src={require("../../images/mbdtf.jpg")} alt="mbdtf.jpeg"/>
             <ProjectsDescription>
               <ProjectTitle>Three.js World Menu</ProjectTitle>
               <ProjectDetails>A site simulating what a future with a metaverse might look like where you select to enter into a 3D anime world</ProjectDetails>

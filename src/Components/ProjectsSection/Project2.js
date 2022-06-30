@@ -22,7 +22,7 @@ export default function Project2(props) {
 
     <StyledProject onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
-            <img src={require("../../images/lonelyHearts.jpg")} alt="lonelyHearts.jpeg" height={300} width={300}/>
+            <img src={require("../../images/lonelyHearts.jpg")} alt="lonelyHearts.jpeg"/>
             <ProjectsDescription>
               <ProjectTitle>Machismo Web Poster</ProjectTitle>
               <ProjectDetails>With the theme of resistance, I made this web poster made with simple html/css and Javascript that speaks about the dangerous consequencesof machismo and misogyny in Latin America</ProjectDetails> 

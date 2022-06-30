@@ -9,4 +9,9 @@ import styled from "styled-components";
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+
+  img{
+    height: 300px;
+    width: 300px;
+  }
 `

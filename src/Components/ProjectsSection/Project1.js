@@ -21,7 +21,7 @@ const handleMouseLeave = () =>{
     <>
     <StyledProject onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <ProjectContainer >
-        <img src={require("../../images/damnAlbum.jpeg")} alt="damnAlbum.jpeg" height={300} width={300}/>
+        <img src={require("../../images/damnAlbum.jpeg")} alt="damnAlbum.jpeg"/>
         <ProjectsDescription>
           <ProjectTitle>Project Belmont</ProjectTitle>
           <ProjectDetails>This is a project management tool meant to teach & guide users on building a project with an agile mindset.</ProjectDetails> 

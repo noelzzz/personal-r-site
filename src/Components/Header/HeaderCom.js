@@ -47,7 +47,6 @@ function HeaderCom(props) {
                         <Fade>
                             <DayNightIcon mode={props.mode} changeMode={props.changeMode}/>
                         </Fade>
-                        
 
                     </IconNavItem>
 

@@ -22,7 +22,7 @@ export default function Project4(props) {
   return (
     <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
-            <img src={require("../../images/tooLate.jpg")} alt="tooLate.jpeg" height={300} width={300}/>
+            <img src={require("../../images/tooLate.jpg")} alt="tooLate.jpeg"/>
             <ProjectsDescription>Test description 4</ProjectsDescription>
         </ProjectContainer>
         

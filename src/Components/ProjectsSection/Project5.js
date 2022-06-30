@@ -21,7 +21,7 @@ export default function Project5(props) {
   return (
     <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
-            <img src={require("../../images/feelSpecial.jpg")} alt="feelSpecial.jpeg" height={300} width={300}/>
+            <img src={require("../../images/feelSpecial.jpg")} alt="feelSpecial.jpeg"/>
             <ProjectsDescription>Test description 5</ProjectsDescription>
         </ProjectContainer>
         
