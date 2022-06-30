@@ -2,15 +2,11 @@ import './App.css';
 import HeaderCom from './Components/Header/HeaderCom';
 import React, { useState,useEffect } from 'react';
 import { GlobalStyles } from './styles/global';
-import {lightTheme, darkTheme, project1Theme, project2Theme, project3Theme, project4Theme, project5Theme} from './themes'
-
-
+import {lightTheme, darkTheme} from './themes'
 import { Container } from './styles/Container.style';
 import HeroSection from './Components/Hero/HeroSection';
-
 import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
-
 import AboutSection from './Components/AboutSection/AboutSection';
 
 
@@ -21,32 +17,13 @@ function App() {
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
 
   const updateMode = () => {
-
     setDarkMode(previous=>!previous)
-
   }
 
  
 
-  const changeColorTheme = (project) => {
-
-
-    if(project==='project1'){
-        setCurrentTheme(project1Theme)
-    }
-    if(project==='project2'){
-      setCurrentTheme(project2Theme)
-    }
-    if(project==='project3'){
-      setCurrentTheme(project3Theme)
-    }
-    if(project==='project4'){
-      setCurrentTheme(project4Theme)
-    }
-    if(project==='project5'){
-      setCurrentTheme(project5Theme)
-    }
-    
+  const changeColorTheme = (projectTheme) => {
+    setCurrentTheme(projectTheme)
   }
 
   const changeThemeLeave = () => {
@@ -76,7 +53,7 @@ function App() {
 
         <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
         
-        <HeroSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} />
+        <HeroSection />
 
         <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
 

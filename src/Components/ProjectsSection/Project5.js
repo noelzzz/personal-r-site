@@ -3,11 +3,13 @@ import React from 'react'
 import { ProjectsDescription } from '../../styles/StyledProjectsSection/ProjectsDescription.Style';
 import { ProjectContainer } from '../../styles/StyledProjectsSection/ProjectContainer.style';
 import { StyledProject } from '../../styles/StyledProjectsSection/StyledProject';
+import { project5Theme } from '../../themes';
+
 
 export default function Project5(props) {
 
   const handleMouseEnter = () =>{
-    props.changeColorTheme('project5')
+    props.changeColorTheme(project5Theme)
   }
   
   const handleMouseLeave = () =>{

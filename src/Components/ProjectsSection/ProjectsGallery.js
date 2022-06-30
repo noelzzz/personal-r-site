@@ -16,7 +16,7 @@ export default function ProjectsGallery(props) {
       <StyledProjectsGallery>
 
         {/* <StyledProject1/> */}
-        <Project1 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave} darktheme={props.darkTheme} currentTheme={props.currentTheme}/>
+        <Project1 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject2/> */}
         <Project2 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
         {/* <StyledProject3/> */}

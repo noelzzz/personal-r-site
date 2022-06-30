@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* transition: all .1s linear; */
     /* background-color: #1b263b; */
     color: ${(props) => props.theme.fontColor};
     font-family: 'Syne', sans-serif;

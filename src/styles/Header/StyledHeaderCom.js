@@ -12,14 +12,17 @@ const StyledHeaderCom = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* transition: all .1s linear; */
     border: none;
     box-sizing: border-box;
     padding: none;
     margin-top:none;
     font-weight: 700;
     position: fixed;
-    /* background-color: ${(props) => props.theme.backgroundColor}; */
-    /* opacity: 80%; */
+    /* background-position: fixed; */
+    background-color: ${(props) => props.theme.backgroundColor};
+    /* opacity: 60%; */
+    /* backdrop-filter: blur(800px); */
     z-index: 10;
 `;
 

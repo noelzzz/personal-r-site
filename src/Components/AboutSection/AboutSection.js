@@ -31,10 +31,11 @@ const AboutContainer = styled.div`
 
 const Resume = styled.div`
     display: flex;
-    height: 80%;
+    height: 90%;
     width: 90%;
     border: 1px solid ${(props) => props.theme.fontColor};
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     align-items: center;
 `
@@ -42,7 +43,7 @@ const Resume = styled.div`
 
 const ResumeExperience = styled.div`
     height: 90%;
-    width: 40%;
+    width: 45%;
     border: 1px solid ${(props) => props.theme.fontColor};
 `
 
