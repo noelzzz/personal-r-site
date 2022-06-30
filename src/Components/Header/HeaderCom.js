@@ -2,6 +2,7 @@
 import StyledHeaderCom from '../../styles/Header/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
+import styled from 'styled-components';
 
 
 function HeaderCom(props) {
@@ -9,63 +10,57 @@ function HeaderCom(props) {
     <>
             <StyledHeaderCom theme={props.theme}>
 
-            <Fade>
-                <div className='itemContainer'>
-                    <div className='headerItem'>Noel Alfaro</div>
-                    <div className='headerItem'>Projects</div>
-                    <div className='headerItem'>About</div>
-                    <div className='headerItem'>Contact</div>
-                </div>
-               
 
-                <div className='iconContainer'>
-                    <DayNightIcon mode={props.mode} changeMode={props.changeMode}/>
-                </div>
+                <ItemContainer>
                 
-        
-            </Fade>
+                    <NavItem>
+                        <Fade>
+                            Noel Alfaro
+                        </Fade>
+                    </NavItem>
+
+                    <NavItem>
+                        <Fade>
+                            Projects
+                        </Fade>
+                    </NavItem>
+
+                    <NavItem>
+                        <Fade>
+                            About
+                        </Fade>
+                    </NavItem>
+
+                    <NavItem>
+                        <Fade>
+                            Contact
+                        </Fade>
+                    </NavItem>
                 
-           
-            
+                </ItemContainer>
+                
+
+                <IconContainer>
+
+                    <IconNavItem>
+
+                        <Fade>
+                            <DayNightIcon mode={props.mode} changeMode={props.changeMode}/>
+                        </Fade>
+                        
+
+                    </IconNavItem>
+
+                </IconContainer>
+
             
             </StyledHeaderCom>
-        
-        
         
         
     </>
 
 
     );
-    // if(!props.theme){
-    //     return(
-    //         <header className='lightHeader'>
-    //             <div className='headerItem'>Noel Alfaro</div>
-    //             <div className='headerItem'>Projects</div>
-    //             <div className='headerItem'>About</div>
-    //             <div className='headerItem'>Contact</div>
-    //             <DayNightIcon theme={props.theme} changeTheme={props.changeTheme}/>  
-    //             {/* <styledIcon className='name' theme={props.theme} changeTheme={props.changeTheme}/>         */}
-                
-    //         </header>
-    //     )
-    // }
-    // if(props.theme){
-    //     return(
-    //         <header className='darkHeader'>
-    //             <div className='headerItem'>Noel Alfaro</div>
-    //             <div className='headerItem'>Projects</div>
-    //             <div className='headerItem'>About</div>
-    //             <div className='headerItem'>Contact</div>
-    //             <DayNightIcon theme={props.theme} changeTheme={props.changeTheme}/>
-    //             {/* <styledIcon className='name' theme={props.theme} changeTheme={props.changeTheme}/>   */}
-
-    //         </header>
-    //     )
-    // }
-    
-    
-
 }
 
 export default HeaderCom;
@@ -73,3 +68,36 @@ export default HeaderCom;
 
 
 
+const ItemContainer = styled.div`
+    width: 35%;
+    height: 90%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+`
+const IconContainer = styled.div`
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+`
+
+const NavItem = styled.div`
+    word-wrap: nowrap;
+    width: fit-content;
+    cursor: pointer;
+    margin: 2%;
+
+`
+
+const IconNavItem = styled.div`
+    width: fit-content;
+    height: fit-content;
+    margin: 2%;
+`

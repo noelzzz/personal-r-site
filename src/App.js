@@ -8,6 +8,7 @@ import HeroSection from './Components/Hero/HeroSection';
 import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import AboutSection from './Components/AboutSection/AboutSection';
+// import { Fade } from 'react-reveal';
 
 
 

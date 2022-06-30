@@ -61,7 +61,7 @@ function DayNightIcon(props) {
             strokeLinecap="round"
             strokeLinejoin="round"
             onClick={handleClick}
-            style={{cursor: "pointer", margin: "auto 1vw",
+            style={{cursor: "pointer",
             ...svgContainerProps
         }}     
         > 
