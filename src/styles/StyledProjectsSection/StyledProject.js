@@ -42,10 +42,9 @@ export const StyledProject = styled.div`
         }      
 
         a{
-  /* text-decoration: none; */
         color: ${(props) => props.theme.fontColor};
         /* transition: transform .1s ease-in-out; */
-    }
+        }
     }
     
 `
