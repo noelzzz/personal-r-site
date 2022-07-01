@@ -49,3 +49,7 @@ export const project5Theme={
 }
 
 
+export const neiuTheme={
+    backgroundColor:'#003DA7',
+    fontColor: '#FDB813'
+}

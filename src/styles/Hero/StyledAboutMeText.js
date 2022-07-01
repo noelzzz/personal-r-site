@@ -5,7 +5,7 @@ export const AboutMeText = styled.div`
     min-width: 450px;
     height: 350px;
     padding: 5px;
-    line-height: 2;
+    /* line-height: 1; */
     display: flex;
     flex-direction: column;
     justify-content: center;

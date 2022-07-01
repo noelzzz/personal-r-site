@@ -1,24 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Fade } from 'react-reveal'
+import { neiuTheme } from '../../themes'
 
-export default function AboutSection() {
+export default function AboutSection(props) {
+
+  // const handleMouseEnter = () =>{
+  //   props.changeColorTheme(neiuTheme)
+  // }
+  
+  // const handleMouseLeave = () =>{
+  //   props.changeThemeLeave()
+  // }
+  
+
+
+
   return (
 
     <Fade>
-    <AboutContainer>
-            <ResumeExperience> 
-                <AboutMeHeader>Skills</AboutMeHeader>
-            </ResumeExperience>
+      <AboutContainer>
+        <Skills> 
+            <AboutMeHeader>Skills</AboutMeHeader>
+        </Skills>
 
-            <ResumeExperience> 
-                <AboutMeHeader>Technologies</AboutMeHeader>
-            </ResumeExperience>
+        <Education > 
+          <AboutMeHeader>Education</AboutMeHeader>
+        </Education>
 
-            <ResumeExperience> 
-                <AboutMeHeader>Education</AboutMeHeader>
-            </ResumeExperience>
-    </AboutContainer>
+      </AboutContainer>
     </Fade>
 
   )
@@ -36,46 +46,47 @@ const AboutContainer = styled.div`
 
 `
 
-// const Resume = styled.div`
-//     display: flex;
-//     height: 90%;
-//     width: 95%;
-//     border: 1px solid ${(props) => props.theme.fontColor};
-//     justify-content: space-evenly;
-//     align-items: center;
-//     flex-direction: row;
-//     align-items: center;
-// `
-
-
-const ResumeExperience = styled.div`
+const Skills = styled.div`
     height: 90%;
-    width: 30%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    justify-content: flex-start;
+    border: 1px solid ${(props) => props.theme.fontColor};
     border-radius: 12px;
     transition: all .2s linear;
-    
-    /* &:hover{
-      transform: scale(104%);
+
+    box-shadow:
+                1px 1px #0A0A0A,
+                3px 3px #0A0A0A,
+                4px 4px #0A0A0A;  
+`
+
+
+const Education = styled.div`
+  
+  height: 90%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid ${(props) => props.theme.fontColor};
+  border-radius: 12px;
+  transition: all .2s linear; 
+
+  box-shadow:
+                1px 1px #0A0A0A,
+                3px 3px #0A0A0A,
+                4px 4px #0A0A0A;
+
+  /* &:hover{
       transition: transform .1s ease-in-out;
-      border: 1.5px solid ${(props) => props.theme.fontColor};
+      border: 1.5px solid #0A0A0A;
+      background-color:${(neiuTheme.backgroundColor)};
+      color: ${(neiuTheme.fontColor)};
       cursor: pointer;
-      box-shadow:
-          1px 1px #0A0A0A,
-          3px 3px #0A0A0A,
-          4px 4px #0A0A0A;
     } */
-
-
-
 `
 
 const AboutMeHeader = styled.h1`
-  /* border: 1px solid ${(props) => props.theme.fontColor}; */
-  margin: 5%;
-  /* text-decoration: underline;  */
-  /* border: 1px solid ${(props) => props.theme.fontColor}; */
+  margin: 20px;
 `
