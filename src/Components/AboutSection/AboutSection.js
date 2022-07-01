@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Fade } from 'react-reveal'
-import { neiuTheme } from '../../themes'
+// import { neiuTheme } from '../../themes'
 
 export default function AboutSection(props) {
 
@@ -22,7 +22,18 @@ export default function AboutSection(props) {
       <AboutContainer>
         <Skills> 
             <AboutMeHeader>Skills</AboutMeHeader>
-            <svg viewBox="0 0 128 128" stroke='currentColor' fill="currentColor">
+
+            <Languages>
+
+            Languages: 
+            <svg viewBox="0 0 128 128">
+            <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+            </svg>
+
+
+
+            </Languages>
+            {/* <svg viewBox="0 0 128 128" stroke='currentColor' fill="currentColor">
             <path d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
             </svg>
 
@@ -66,7 +77,7 @@ export default function AboutSection(props) {
 
             <svg viewBox="0 0 128 128">
             <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
-            </svg>
+            </svg> */}
         </Skills>
 
         <Education > 
@@ -84,7 +95,6 @@ const AboutContainer = styled.div`
     display: flex;
     height: 90vh;
     width: 100vw;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     justify-content: space-evenly;
     flex-direction: row;
 
@@ -94,11 +104,11 @@ const AboutContainer = styled.div`
       width: 50px;
     }
 
-    /* svg{
-      height: 128px;
-      width: 128px;
-      color: ${(props) => props.theme.fontColor};
-    } */
+    svg{
+      height: 64px;
+      width: 64px;
+      fill: currentColor
+    }
 
 `
 
@@ -106,17 +116,27 @@ const Skills = styled.div`
     height: 90%;
     width: 55%;
     display: flex;
-    /* padding: 0; */
     flex-direction: column;  
     justify-content: flex-start;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    align-items: center;
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     border-radius: 12px;
     transition: all .2s linear;
 
-    box-shadow:
+    /* box-shadow:
                 1px 1px #0A0A0A,
                 3px 3px #0A0A0A,
-                4px 4px #0A0A0A;  
+                4px 4px #0A0A0A;   */
+`
+
+
+
+const Languages = styled.div`
+  width: 95%;
+  height: 80%;
+  border: 1px solid ${(props) => props.theme.fontColor};
+  font-size: 28px;
+
 `
 
 
@@ -126,28 +146,21 @@ const Education = styled.div`
   width: 35%;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${(props) => props.theme.fontColor};
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
   border-radius: 12px;
   transition: all .2s linear; 
 
-  box-shadow:
+  /* box-shadow:
                 1px 1px #0A0A0A,
                 3px 3px #0A0A0A,
-                4px 4px #0A0A0A;
-
-  /* &:hover{
-      transition: transform .1s ease-in-out;
-      border: 1.5px solid #0A0A0A;
-      background-color:${(neiuTheme.backgroundColor)};
-      color: ${(neiuTheme.fontColor)};
-      cursor: pointer;
-    } */
+                4px 4px #0A0A0A; */
 `
 
 const AboutMeHeader = styled.h1`
-  /* margin: 20px; */
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
-  border: 1px solid ${(props) => props.theme.fontColor}; 
+  text-decoration: underline;
+  font-size: 40px;
+  /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
