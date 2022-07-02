@@ -7,34 +7,35 @@ import styled from 'styled-components';
 
 function HeaderCom(props) {
     return(
-    <>
+    <>  
+    <Fade cascade>
             <StyledHeaderCom theme={props.theme}>
 
-
+            
                 <ItemContainer>
-                
+                    
                     <NavItem>
-                        <Fade cascade>
+                        
                             Noel Alfaro
-                        </Fade>
+                        
                     </NavItem>
-
+                    
                     <NavItem>
-                        <Fade>
+                    
                             Projects
-                        </Fade>
+                        
                     </NavItem>
 
                     <NavItem>
-                        <Fade>
+                        
                             About
-                        </Fade>
+                        
                     </NavItem>
 
                     <NavItem>
-                        <Fade>
+                        
                             Contact
-                        </Fade>
+                        
                     </NavItem>
                 
                 </ItemContainer>
@@ -44,9 +45,9 @@ function HeaderCom(props) {
 
                     <IconNavItem>
 
-                        <Fade>
+                        
                             <DayNightIcon mode={props.mode} changeMode={props.changeMode}/>
-                        </Fade>
+                        
 
                     </IconNavItem>
 
@@ -54,7 +55,7 @@ function HeaderCom(props) {
 
             
             </StyledHeaderCom>
-        
+        </Fade>
         
     </>
 
@@ -88,8 +89,8 @@ const IconContainer = styled.div`
 `
 
 const NavItem = styled.div`
-    word-wrap: nowrap;
-    word-break: keep-all;
+    /* word-wrap: nowrap; */
+    /* word-break: keep-all; */
     width: fit-content;
     cursor: pointer;
     margin: 2%;
