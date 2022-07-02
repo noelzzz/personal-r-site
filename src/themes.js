@@ -4,7 +4,7 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-    backgroundColor: '#1b263b',
+    backgroundColor: '#011627',
     fontColor: '#fff'
 }
 
@@ -50,6 +50,7 @@ export const project5Theme={
 
 
 export const neiuTheme={
-    backgroundColor:'#003DA7',
-    fontColor: '#FDB813'
+    backgroundColor: '#22333b',
+
+    fontColor: '#dedcd7'
 }

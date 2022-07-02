@@ -14,7 +14,7 @@ function HeaderCom(props) {
                 <ItemContainer>
                 
                     <NavItem>
-                        <Fade>
+                        <Fade cascade>
                             Noel Alfaro
                         </Fade>
                     </NavItem>
@@ -89,9 +89,11 @@ const IconContainer = styled.div`
 
 const NavItem = styled.div`
     word-wrap: nowrap;
+    word-break: keep-all;
     width: fit-content;
     cursor: pointer;
     margin: 2%;
+    /* font-size: 18px; */
 
 `
 
