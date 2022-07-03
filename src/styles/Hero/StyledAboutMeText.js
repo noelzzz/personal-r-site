@@ -6,9 +6,9 @@ export default function AboutMeText() {
     return ( 
         <Fade>
         <StyledAboutMeText>
-            <Fade top cascade><h1>Hello there</h1></Fade>
+            <Fade top cascade><h1>Hello there,</h1></Fade>
             <Fade cascade>
-            My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.
+            My name is Noel & welcome to my page. <br /> Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.
             </Fade>
         </StyledAboutMeText>
         </Fade>

@@ -1,30 +1,31 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Fade } from 'react-reveal'
-import { neiuTheme } from '../../themes'
-
+import styled from 'styled-components'
 
 export default function AboutSection(props) {
 
-  const handleMouseEnter = () =>{
-    props.changeColorTheme(neiuTheme)
-  }
+  // const handleMouseEnter = () =>{
+  //   props.changeColorTheme(neiuTheme)
+  // }
   
-  const handleMouseLeave = () =>{
-    props.changeThemeLeave()
-  }
+  // const handleMouseLeave = () =>{
+  //   props.changeThemeLeave()
+  // }
   
 
-
+  // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
   return (
-
     <Fade>
-      <AboutContainer>
-        <Skills onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> 
+    <AboutContainer>
+      
+      
+        <Skills> 
+          
             <AboutMeHeader>Skills</AboutMeHeader>
 
             <Languages>
+              
               <SvgContainer>
                 <svg viewBox="0 0 128 128"  fill="currentColor">
                   <path d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
@@ -52,9 +53,11 @@ export default function AboutSection(props) {
                 <path d="M125.54 26.23a28.78 28.78 0 00-2.65-7.58 28.84 28.84 0 00-4.76-6.32 23.42 23.42 0 00-6.62-4.55 27.27 27.27 0 00-7.68-2.53c-2.65-.51-5.56-.51-8.21-.76H30.25a45.46 45.46 0 00-6.09.51 21.81 21.81 0 00-5.82 1.52c-.53.25-1.32.51-1.85.76a33.82 33.82 0 00-5 3.28c-.53.51-1.06.76-1.59 1.26a22.41 22.41 0 00-4.76 6.32 23.61 23.61 0 00-2.65 7.58 78.47 78.47 0 00-.79 7.83v60.39a39.32 39.32 0 00.79 7.83 28.78 28.78 0 002.65 7.58 28.84 28.84 0 004.76 6.32 23.42 23.42 0 006.62 4.55 27.27 27.27 0 007.68 2.53c2.65.51 5.56.51 8.21.76h63.22a45.08 45.08 0 008.21-.76 27.27 27.27 0 007.68-2.53 30.13 30.13 0 006.62-4.55 22.41 22.41 0 004.76-6.32 23.61 23.61 0 002.65-7.58 78.47 78.47 0 00.79-7.83V34.06a39.32 39.32 0 00-.8-7.83zm-18.79 75.54C101 91 90.37 94.33 85 96.5c-11.11 6.13-26.38 6.76-41.75.47A64.53 64.53 0 0113.84 73a50 50 0 0010.85 6.32c15.87 7.1 31.73 6.61 42.9 0-15.9-11.66-29.4-26.82-39.46-39.2a43.47 43.47 0 01-5.29-6.82c12.16 10.61 31.5 24 38.38 27.79a271.77 271.77 0 01-27-32.34 266.8 266.8 0 0044.47 34.87c.71.38 1.26.7 1.7 1a32.71 32.71 0 001.21-3.51c3.71-12.89-.53-27.54-9.79-39.67C93.25 33.81 106 57.05 100.66 76.51c-.14.53-.29 1-.45 1.55l.19.22c10.6 12.63 7.67 26.02 6.35 23.49z"></path>
                 </svg>
               </SvgContainer>
+              
             </Languages>
 
             <Languages>
+    
               <SvgContainer2>
 
                 <svg viewBox="0 0 128 128" fill='currentColor'>
@@ -79,8 +82,17 @@ export default function AboutSection(props) {
           
               </SvgContainer2>
             </Languages>
+
+            
+
+              <ResumeButton>Download Resume</ResumeButton>
+              
+              
+            
             
         </Skills>
+      
+      
 
         <Education > 
           <AboutMeHeader>Education</AboutMeHeader>
@@ -88,58 +100,80 @@ export default function AboutSection(props) {
             <School>Northeastern Illinois Univerity</School>
             <Major>B.S. Computer Science</Major>
             <Minor>Minor in User Interaction</Minor>
-            {/* <h1>Northeastern Illinois University</h1>
-            <h2>B.S. Computer Science Class of 2023</h2>
-            <h3>Minor in User Interaction</h3> */}
+
+
+            <CourseWork>
+            Relevant Courses:
+              <Course>Data Structures & Algorithms</Course>
+              <Course>Database Management</Course>
+              <Course>Mobile App Development</Course>
+              <Course>Fund. of Software Engineering</Course>
+              <Course>Computer Networks</Course>
+            </CourseWork>
           </Credentials>
 
 
         </Education>
-
-      </AboutContainer>
+        
+    </AboutContainer>
     </Fade>
-
+    
   )
 }
 
-
+// Section
 const AboutContainer = styled.div`
     display: flex;
     height: 90vh;
     width: 100vw;
     justify-content: space-evenly;
     flex-direction: row;
+    align-items: center;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
-
-
     img{
       height: 50px;
       width: 50px;
     }
 
-
-
+`
+const AboutMeHeader = styled.h1`
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  height: 8%;
+  width: 100%;
+  text-decoration: underline;
+  font-size: 40px;
+  /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
 
+
+const ResumeButton = styled.div`
+  background-color:${(props) => props.theme.fontColor};
+  border: 1px solid ${(props) => props.theme.fontColor};
+  color: ${(props) => props.theme.fontColor};
+  padding: 2%;
+  height: 50px;
+  width: fit-content;
+  border-radius: 24px;
+`
+
+
+
+
+
+// Skills
 const Skills = styled.div`
     height: 90%;
     width: 50%;
     display: flex;
     flex-direction: column;  
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
     transition: all .2s linear;
-
-    /* box-shadow:
-                1px 1px #0A0A0A,
-                3px 3px #0A0A0A,
-                4px 4px #0A0A0A;   */
 `
-
-
-
 const Languages = styled.div`
   width: 95%;
   height: 30%;
@@ -150,7 +184,6 @@ const Languages = styled.div`
   align-items: center;
   padding: 5%;
 `
-
 const SvgContainer = styled.div`
   width: 95%;
   display: flex;
@@ -162,7 +195,6 @@ const SvgContainer = styled.div`
       /* fill: currentColor */
     }
 `
-
 const SvgContainer2 = styled.div`
   width: 95%;
   display: flex;
@@ -175,63 +207,59 @@ const SvgContainer2 = styled.div`
     }
 `
 
+
+
+
+
+
+
+
+// Education
 const Education = styled.div`
-  
   height: 90%;
   width: 40%;
   display: flex;
   flex-direction: column;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
-  justify-content:flex-start;
   border-radius: 12px;
-  transition: all .2s linear; 
-
-  /* box-shadow:
-                1px 1px #0A0A0A,
-                3px 3px #0A0A0A,
-                4px 4px #0A0A0A; */
 `
 
 const Credentials = styled.div`
-  height: 85%;
+  height: 70%;
   width: 95%;
   display: flex;
-  padding: 2%;
+  /* padding: 2%; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
-
-
-const School = styled.h2`
+const School = styled.h1`
   font-size: 28px;
-  /* text-align: left; */
+  text-align: left;
   /* width: 100%; */
-  margin: 30px 0px 5px 0px;
+  margin: 30px 0px 5px 30px;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
-const Major = styled.h2`
+const Major = styled.p`
   font-size: 24px;
-  margin: 10px 20px;
+  margin: 10px 0px 0px 60px;
 `
-const Minor = styled.h2`
+const Minor = styled.p`
   font-size: 24px;
-  margin: 10px 20px;
+  margin: 10px 0px 0px 60px;
+`
+const CourseWork = styled.p`
+  font-size: 24px;
+  margin: 30px 0px 5px 30px;
+`
+const Course = styled.p`
+  font-size: 24px;
+  margin: 10px 0px 0px 30px;
 `
 
 
 
 
-const AboutMeHeader = styled.h1`
-  display: flex;
-  justify-content: flex-start;
-  /* padding-left: 20px; */
-  /* margin-top: 20px;   */
-  height: 10%;
-  width: 100%;
-  text-decoration: underline;
-  font-size: 40px;
-  /* border: 1px solid ${(props) => props.theme.fontColor};  */
-`
+
