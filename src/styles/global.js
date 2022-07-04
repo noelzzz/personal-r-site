@@ -23,6 +23,10 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
+  button{
+    font-family: 'Syne', sans-serif;
+  }
+
   a{
   /* text-decoration: none; */
   color: ${(props) => props.theme.fontColor};

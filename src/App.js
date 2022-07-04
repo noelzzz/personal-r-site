@@ -60,7 +60,7 @@ function App() {
 
         <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
 
-        <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme} theme={currentTheme}/>
+        <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
         
       </Container>
       

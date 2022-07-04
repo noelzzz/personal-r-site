@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledProject = styled.div`
     height: 80%;
     width: 700px;
-    margin: 10px;
+    /* margin: 10px; */
     display: flex;
     /* padding: 1%; */
     justify-content: flex-start;

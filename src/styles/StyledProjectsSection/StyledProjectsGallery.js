@@ -6,7 +6,7 @@ export const StyledProjectsGallery = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: all .2s linear;

@@ -85,7 +85,7 @@ export default function AboutSection(props) {
 
             
 
-              <ResumeButton>Download Resume</ResumeButton>
+              <ResumeButton currentTheme={props.currentTheme}>Download Resume</ResumeButton>
               
               
             
@@ -148,14 +148,29 @@ const AboutMeHeader = styled.h1`
 `
 
 
-const ResumeButton = styled.div`
-  background-color:${(props) => props.theme.fontColor};
+const ResumeButton = styled.button`
+  background-color:${(props) => props.currentTheme.backgroundColor};
   border: 1px solid ${(props) => props.theme.fontColor};
-  color: ${(props) => props.theme.fontColor};
+  cursor: pointer;
+  font-weight: 700;
+  color: ${(props) => props.currentTheme.fontColor};
   padding: 2%;
   height: 50px;
   width: fit-content;
-  border-radius: 24px;
+  border-radius: 12px;
+  transition: all .1s linear;
+
+  &:hover{
+    scale: 101%;
+    /* font-weight: 700; */
+    border: 1px solid ${(props) => props.theme.fontColor};
+    box-shadow: 
+              2px 2px ${(props) => props.currentTheme.fontColor},
+              3px 3px ${(props) => props.currentTheme.fontColor},
+              4px 4px ${(props) => props.currentTheme.fontColor};
+  }
+
+
 `
 
 

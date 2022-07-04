@@ -5,14 +5,14 @@ import Project2 from './Project2';
 import Project3 from './Project3';
 import Project4 from './Project4';
 import Project5 from './Project5'
-// import { Fade } from 'react-reveal';
+import { Fade } from 'react-reveal';
 // import { darkTheme } from '../../themes';
 // import styled from 'styled-components';
 
 export default function ProjectsGallery(props) {
   
   return (
-    // <Fade cascade>
+    <Fade cascade>
       <StyledProjectsGallery>
 
         {/* <StyledProject1/> */}
@@ -27,7 +27,7 @@ export default function ProjectsGallery(props) {
         <Project5 changeColorTheme={props.changeColorTheme} changeThemeLeave={props.changeThemeLeave}/>
 
       </StyledProjectsGallery>
-    // </Fade>
+     </Fade>
   )
 }
 
