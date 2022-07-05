@@ -8,6 +8,7 @@ import HeroSection from './Components/Hero/HeroSection';
 import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import AboutSection from './Components/AboutSection/AboutSection';
+import ContactSection from './Components/ContactSection/ContactSection';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 // import { Fade } from 'react-reveal';
 
@@ -61,6 +62,8 @@ function App() {
         <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
 
         <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+
+        <ContactSection></ContactSection>
         
       </Container>
       

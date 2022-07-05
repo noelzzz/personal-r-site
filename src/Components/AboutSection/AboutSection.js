@@ -4,18 +4,9 @@ import styled from 'styled-components'
 
 export default function AboutSection(props) {
 
-  // const handleMouseEnter = () =>{
-  //   props.changeColorTheme(neiuTheme)
-  // }
-  
-  // const handleMouseLeave = () =>{
-  //   props.changeThemeLeave()
-  // }
-  
-
-  // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
 
   return (
+    
     <Fade>
     <AboutContainer>
       
@@ -114,7 +105,7 @@ export default function AboutSection(props) {
 
 
         </Education>
-        
+       
     </AboutContainer>
     </Fade>
     
@@ -142,7 +133,7 @@ const AboutMeHeader = styled.h1`
   padding-left: 20px;
   height: 8%;
   width: 100%;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-size: 40px;
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
@@ -183,7 +174,7 @@ const Skills = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;  
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
@@ -235,6 +226,7 @@ const Education = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-evenly; */
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
   border-radius: 12px;
