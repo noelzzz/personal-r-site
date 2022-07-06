@@ -89,7 +89,7 @@ export default function AboutSection(props) {
           <AboutMeHeader>Education</AboutMeHeader>
           <Credentials>
             <School>Northeastern Illinois Univerity</School>
-            <Major>B.S. Computer Science</Major>
+            <Major>Bachelor of Science, Computer Science</Major>
             <Minor>Minor in User Interaction</Minor>
 
 
@@ -130,9 +130,10 @@ const AboutContainer = styled.div`
 const AboutMeHeader = styled.h1`
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   height: 8%;
-  width: 100%;
+  width: 90%;
+  margin: 5% 0;
   /* text-decoration: underline; */
   font-size: 40px;
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
@@ -174,9 +175,9 @@ const Skills = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;  
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid ${(props) => props.theme.fontColor};   */
+    border: 1px solid ${(props) => props.theme.fontColor};  
     border-radius: 12px;
     transition: all .2s linear;
 `
@@ -223,11 +224,11 @@ const SvgContainer2 = styled.div`
 // Education
 const Education = styled.div`
   height: 90%;
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  /* border: 1px solid ${(props) => props.theme.fontColor}; */
+  border: 1px solid ${(props) => props.theme.fontColor};
   align-items: center;
   border-radius: 12px;
 `
@@ -238,32 +239,52 @@ const Credentials = styled.div`
   display: flex;
   /* padding: 2%; */
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-start;
+
+  h1{
+    margin: 0px 0px 0px 30px;
+  }
+
+  p{
+    margin: 0px 0px 0px 30px;
+  }
+
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
 const School = styled.h1`
   font-size: 28px;
   text-align: left;
-  /* width: 100%; */
-  margin: 30px 0px 5px 30px;
+  margin: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  /* margin: 30px 0px 5px 30px; */
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const Major = styled.p`
   font-size: 24px;
-  margin: 10px 0px 0px 60px;
+  margin: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px 0px 0px 60px; */
 `
 const Minor = styled.p`
   font-size: 24px;
-  margin: 10px 0px 0px 60px;
+  margin: 0;
+  /* margin: 10px 0px 0px 60px; */
 `
 const CourseWork = styled.p`
   font-size: 24px;
-  margin: 30px 0px 5px 30px;
+  margin: 0;
+  /* margin: 30px 0px 5px 30px; */
 `
 const Course = styled.p`
   font-size: 24px;
-  margin: 10px 0px 0px 30px;
+  margin: 0;
+  /* margin: 10px 0px 0px 30px;  */
 `
 
 

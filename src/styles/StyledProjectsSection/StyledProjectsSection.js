@@ -14,7 +14,7 @@ export const StyledProjectsSection = styled.div`
     /* background-color: ${(props) => props.theme.header}; */
     overflow-x: scroll;
 
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    border: 1px solid ${(props) => props.theme.fontColor};
 
 
     -ms-overflow-style: none;  //Internet Explorer 10+
