@@ -1,6 +1,7 @@
 import React from 'react'
 import { Fade } from 'react-reveal'
 import styled from 'styled-components'
+import resumeFile from './Noel Alfaro Resume 2022.pdf'
 
 export default function AboutSection(props) {
 
@@ -76,8 +77,9 @@ export default function AboutSection(props) {
 
             
 
-              <ResumeButton currentTheme={props.currentTheme}>Download Resume</ResumeButton>
-              
+          <a href={resumeFile} download="NoelAlfaroResume.pdf">
+          <ResumeButton currentTheme={props.currentTheme}>Download Resume</ResumeButton>
+          </a>
               
             
             
@@ -130,8 +132,9 @@ const AboutContainer = styled.div`
 const AboutMeHeader = styled.h1`
   display: flex;
   justify-content: flex-start;
+  /* align-items: center; */
   /* padding-left: 20px; */
-  height: 8%;
+  /* height: 8%; */
   width: 90%;
   margin: 5% 0;
   /* text-decoration: underline; */
@@ -175,9 +178,9 @@ const Skills = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;  
-    justify-content: space-evenly;
+    /* justify-content: space-around; */
     align-items: center;
-    border: 1px solid ${(props) => props.theme.fontColor};  
+    /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
     transition: all .2s linear;
 `
@@ -205,7 +208,7 @@ const SvgContainer = styled.div`
 const SvgContainer2 = styled.div`
   width: 95%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   svg{
       height: 84px;
@@ -228,7 +231,7 @@ const Education = styled.div`
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  border: 1px solid ${(props) => props.theme.fontColor};
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
   border-radius: 12px;
 `

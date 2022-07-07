@@ -8,7 +8,7 @@ function ContactSection() {
     
     <ContactContainer>
 
-
+Designed & built by Noel using React.js
     </ContactContainer> 
     
     
@@ -23,8 +23,9 @@ const ContactContainer = styled.div`
     display: flex;
     height: 90vh;
     width: 100vw;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 18px;
+    /* align-items: ; */
     border: 1px solid ${(props) => props.theme.fontColor};
 `
