@@ -3,6 +3,7 @@ import StyledHeaderCom from '../../styles/Header/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
+import { lightTheme, darkTheme } from '../../themes';
 
 
 function HeaderCom(props) {
@@ -95,6 +96,12 @@ const NavItem = styled.div`
     cursor: pointer;
     margin: 2%;
     /* font-size: 18px; */
+
+
+    &:active{
+        background-color: ${ (props) => props.theme =  lightTheme ?  darkTheme.backgroundColor : lightTheme.backgroundColor};
+        color: ${ (props) => props.theme =  lightTheme ?  darkTheme.fontColor : lightTheme.fontColor};
+    }
 
 `
 
