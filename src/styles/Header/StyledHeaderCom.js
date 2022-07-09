@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import HeaderCom from "../Components/HeaderCom";
 
 const StyledHeaderCom = styled.div`
-    height: 8vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
