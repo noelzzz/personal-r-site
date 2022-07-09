@@ -32,7 +32,7 @@ export const StyledProject = styled.div`
         border: 1.5px solid ${(props) => props.theme.fontColor};
         cursor: pointer;
         box-shadow:
-                1px 1px #0A0A0A,
+                2px 2px #0A0A0A,
                 3px 3px #0A0A0A,
                 4px 4px #0A0A0A;
 
