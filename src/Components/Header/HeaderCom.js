@@ -98,10 +98,10 @@ const NavItem = styled.div`
     /* font-size: 18px; */
 
 
-    &:active{
+    /* &:active{
         background-color: ${ (props) => props.theme =  lightTheme ?  darkTheme.backgroundColor : lightTheme.backgroundColor};
         color: ${ (props) => props.theme =  lightTheme ?  darkTheme.fontColor : lightTheme.fontColor};
-    }
+    } */
 
 `
 

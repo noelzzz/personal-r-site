@@ -9,6 +9,7 @@ import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import AboutSection from './Components/AboutSection/AboutSection';
 import ContactSection from './Components/ContactSection/ContactSection';
+import FooterCom from './Components/Footer/FooterCom';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 // import { Fade } from 'react-reveal';
 
@@ -63,7 +64,9 @@ function App() {
 
         <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
 
-        <ContactSection></ContactSection>
+        <ContactSection/>
+
+        <FooterCom/>
         
       </Container>
       
