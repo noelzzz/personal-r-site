@@ -1,9 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+// import { darkTheme } from '../themes';
 
 export const GlobalStyles = createGlobalStyle`
-  *{
+  *,*:before,*:after{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
+
 
   header{
 
@@ -28,9 +32,20 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a{
-  /* text-decoration: none; */
-  color: ${(props) => props.theme.fontColor};
+    text-decoration: none;
+    color: ${(props) => props.theme.fontColor};
+    text-decoration: none;
+
   }
+
+  /* a:after{
+    content: "";
+    position: absolute;
+    background-color
+    height: 3px;
+    width: 100%;
+
+  } */
 
 
 `

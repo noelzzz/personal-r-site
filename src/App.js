@@ -10,8 +10,6 @@ import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import AboutSection from './Components/AboutSection/AboutSection';
 import ContactSection from './Components/ContactSection/ContactSection';
 import FooterCom from './Components/Footer/FooterCom';
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-// import { Fade } from 'react-reveal';
 
 
 
@@ -45,7 +43,11 @@ function App() {
       }else{
         setCurrentTheme(lightTheme)
       }
-    },[darkMode])
+  },[darkMode])
+
+
+ 
+
 
 
 
@@ -56,17 +58,20 @@ function App() {
      
       <Container>
 
-        <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
-        
-        <HeroSection />
 
-        <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+                <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
 
-        <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+                <HeroSection />
 
-        <ContactSection/>
+                <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme} />
 
-        <FooterCom/>
+                <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+
+                <ContactSection/>
+
+                <FooterCom/>
+              
+
         
       </Container>
       

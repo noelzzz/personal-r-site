@@ -4,9 +4,23 @@ import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 
 function HeaderCom(props) {
+
+
+/* <Router>
+    <Routes>
+        <Route exact path={["/#Hero", "/#Projects", "/#About", "/#Contact"]}>
+
+        </Route>
+    </Routes>
+</Router> */
+
+    
+
     return(
     <>  
     <Fade cascade>
@@ -15,27 +29,38 @@ function HeaderCom(props) {
             
                 <ItemContainer>
                     
+
+                
                     <NavItem>
                         
-                            Noel Alfaro
+                        {/* <Link to={"/#Hero"}>Noel Alfaro</Link>     */}
+                        {/* <Link>Noel Alfaro</Link>  */}
+                        Noel Alfaro
                         
                     </NavItem>
                     
+              
                     <NavItem>
                     
-                            Projects
+                        {/* <Link to="/#Projects">Projects</Link>     */}
+                        {/* <Link>Projects</Link>  */}
+                        Projects
                         
                     </NavItem>
 
                     <NavItem>
                         
-                            About
+                        {/* <Link to={"/#About"}>About</Link>     */}
+                        {/* <Link>About</Link>  */}
+                        About
                         
                     </NavItem>
 
                     <NavItem>
                         
-                            Contact
+                         {/* <Link to={"/Contact"}>Contact</Link>    */}
+                         {/* <Link>Contact</Link>  */}
+                         Contact
                         
                     </NavItem>
                 
@@ -79,6 +104,8 @@ const ItemContainer = styled.div`
     align-items: center;
     font-weight: 700;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
+
+
 `
 const IconContainer = styled.div`
     width: 65%;
