@@ -4,7 +4,14 @@ import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import HeroSection from '../../../personal-r-site/src/Components/Hero/HeroSection';
+// import ProjectsSection from '../../../personal-r-site/src/Components/ProjectsSection/ProjectsSection';
+// import AboutSection from '../../../personal-r-site/src/Components/AboutSection/AboutSection';
+import ContactSection from '../ContactSection/ContactSection';
+import AboutSection from '../AboutSection/AboutSection';
+import HeroSection from '../Hero/HeroSection';
+import ProjectsSection from '../ProjectsSection/ProjectsSection';
 
 
 
@@ -30,38 +37,32 @@ function HeaderCom(props) {
                 <ItemContainer>
                     
 
+                <Router>
+                    <Routes>
+                        <Route path="/" exact component={HeroSection}>
+
+                        </Route>
+                        {/* <Route exact path={["/#Hero", "/#Projects", "/#About", "/#Contact"]}>
+
+                        </Route> */}
+                    </Routes>
+                </Router>
                 
                     <NavItem>
-                        
-                        {/* <Link to={"/#Hero"}>Noel Alfaro</Link>     */}
-                        {/* <Link>Noel Alfaro</Link>  */}
                         Noel Alfaro
-                        
                     </NavItem>
                     
               
                     <NavItem>
-                    
-                        {/* <Link to="/#Projects">Projects</Link>     */}
-                        {/* <Link>Projects</Link>  */}
                         Projects
-                        
                     </NavItem>
 
                     <NavItem>
-                        
-                        {/* <Link to={"/#About"}>About</Link>     */}
-                        {/* <Link>About</Link>  */}
-                        About
-                        
+                        About    
                     </NavItem>
 
                     <NavItem>
-                        
-                         {/* <Link to={"/Contact"}>Contact</Link>    */}
-                         {/* <Link>Contact</Link>  */}
-                         Contact
-                        
+                         Contact   
                     </NavItem>
                 
                 </ItemContainer>

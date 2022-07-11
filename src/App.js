@@ -59,17 +59,17 @@ function App() {
       <Container>
 
 
-                <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
+        <HeaderCom changeMode={updateMode}  mode={darkMode} theme={currentTheme}/> 
 
-                <HeroSection />
+        <HeroSection />
 
-                <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme} />
+        <ProjectsSection mode={darkMode} theme={darkMode ? darkTheme : lightTheme} changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme} />
 
-                <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
+        <AboutSection changeColorTheme={changeColorTheme} changeThemeLeave={changeThemeLeave} currentTheme={currentTheme}/>
 
-                <ContactSection/>
+        <ContactSection/>
 
-                <FooterCom/>
+        <FooterCom/>
               
 
         

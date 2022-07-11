@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledProject = styled.div`
-    height: 80%;
+    height: 400px;
     width: 700px;
     /* margin: 10px; */
     display: flex;

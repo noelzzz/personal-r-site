@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    min-width: 300px;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* transition: all .1s linear; */
@@ -38,10 +39,12 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
-  /* a:after{
+
+/* 
+  a:after{
     content: "";
     position: absolute;
-    background-color
+    background-color: ${(props) => props.theme.fontColor};
     height: 3px;
     width: 100%;
 
