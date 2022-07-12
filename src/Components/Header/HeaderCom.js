@@ -4,28 +4,15 @@ import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import HeroSection from '../../../personal-r-site/src/Components/Hero/HeroSection';
-// import ProjectsSection from '../../../personal-r-site/src/Components/ProjectsSection/ProjectsSection';
-// import AboutSection from '../../../personal-r-site/src/Components/AboutSection/AboutSection';
-import ContactSection from '../ContactSection/ContactSection';
-import AboutSection from '../AboutSection/AboutSection';
-import HeroSection from '../Hero/HeroSection';
-import ProjectsSection from '../ProjectsSection/ProjectsSection';
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import ContactSection from '../ContactSection/ContactSection';
+// import AboutSection from '../AboutSection/AboutSection';
+// import HeroSection from '../Hero/HeroSection';
+// import ProjectsSection from '../ProjectsSection/ProjectsSection';
 
 
 
 function HeaderCom(props) {
-
-
-/* <Router>
-    <Routes>
-        <Route exact path={["/#Hero", "/#Projects", "/#About", "/#Contact"]}>
-
-        </Route>
-    </Routes>
-</Router> */
-
     
 
     return(
@@ -37,16 +24,16 @@ function HeaderCom(props) {
                 <ItemContainer>
                     
 
-                <Router>
+                {/* <Router>
                     <Routes>
                         <Route path="/" exact component={HeroSection}>
 
-                        </Route>
+                        </Route> */}
                         {/* <Route exact path={["/#Hero", "/#Projects", "/#About", "/#Contact"]}>
 
                         </Route> */}
-                    </Routes>
-                </Router>
+                    {/* </Routes>
+                </Router> */}
                 
                     <NavItem>
                         Noel Alfaro

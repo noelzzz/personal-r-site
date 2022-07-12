@@ -125,12 +125,8 @@ const AboutContainer = styled.div`
 const AboutMeHeader = styled.h1`
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
-  /* padding-left: 20px; */
-  /* height: 8%; */
   width: 90%;
   margin: 5% 0;
-  /* text-decoration: underline; */
   font-size: 40px;
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
@@ -150,7 +146,6 @@ const ResumeButton = styled.button`
 
   &:hover{
     scale: 101%;
-    /* font-weight: 700; */
     border: 1px solid ${(props) => props.theme.fontColor};
     box-shadow: 
               2px 2px ${(props) => props.currentTheme.fontColor},
@@ -195,7 +190,6 @@ const SvgContainer = styled.div`
   svg{
       height: 64px;
       width: 64px;
-      /* fill: currentColor */
     }
 `
 const SvgContainer2 = styled.div`
@@ -206,7 +200,6 @@ const SvgContainer2 = styled.div`
   svg{
       height: 84px;
       width: 84px;
-      /* fill: currentColor */
     }
 `
 
@@ -233,7 +226,6 @@ const Credentials = styled.div`
   height: 70%;
   width: 95%;
   display: flex;
-  /* padding: 2%; */
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
@@ -255,7 +247,6 @@ const School = styled.h1`
   width: fit-content;
   display: flex;
   justify-content: center;
-  /* margin: 30px 0px 5px 30px; */
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const Major = styled.p`
@@ -265,22 +256,18 @@ const Major = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10px 0px 0px 60px; */
 `
 const Minor = styled.p`
   font-size: 24px;
   margin: 0;
-  /* margin: 10px 0px 0px 60px; */
 `
 const CourseWork = styled.p`
   font-size: 24px;
   margin: 0;
-  /* margin: 30px 0px 5px 30px; */
 `
 const Course = styled.p`
   font-size: 24px;
   margin: 0;
-  /* margin: 10px 0px 0px 30px;  */
 `
 
 

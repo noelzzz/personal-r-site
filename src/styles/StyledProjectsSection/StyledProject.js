@@ -4,21 +4,16 @@ import styled from "styled-components";
 export const StyledProject = styled.div`
     height: 400px;
     width: 700px;
-    /* margin: 10px; */
     display: flex;
-    /* padding: 1%; */
     justify-content: flex-start;
     box-sizing: border-box;
     align-items: center;
     background-color: ${(props) => props.backgroundColor};
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
-    /* color: ${(props) => props.theme.fontColor}; */
     border-radius: 12px;
     transition: all .2s linear;
-    /* transition: transform 1s ease-in-out; */
     
     a{
-  /* text-decoration: none; */
         color: ${(props) => props.theme.fontColor};
     }
 
@@ -37,13 +32,11 @@ export const StyledProject = styled.div`
                 4px 4px #0A0A0A;
 
         img{
-            /* transform: scale(101%); */
             transition: transform .2s ease-in-out;
         }      
 
         a{
         color: ${(props) => props.theme.fontColor};
-        /* transition: transform .1s ease-in-out; */
         }
     }
     
