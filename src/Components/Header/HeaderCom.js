@@ -5,10 +5,7 @@ import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import ContactSection from '../ContactSection/ContactSection';
-// import AboutSection from '../AboutSection/AboutSection';
-// import HeroSection from '../Hero/HeroSection';
-// import ProjectsSection from '../ProjectsSection/ProjectsSection';
+
 
 
 
