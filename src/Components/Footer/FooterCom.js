@@ -17,7 +17,7 @@ export default function FooterCom() {
 
 
 const FooterContainer = styled.div`
-    height: 10vh;
+    height: 6vh;
     width: 100vw;
     /* border-bottom: .1px groove ${(props) => props.theme.fontColor};/ */
     /* border-top: .1px groove ${(props) => props.theme.fontColor}; */
@@ -30,7 +30,7 @@ const FooterContainer = styled.div`
 const LeftNav = styled.div`
     width: fit-content;
     height: fit-content;
-    margin-left: 40px;
+    margin-left: 20px;
     /* align-items: flex-start; */
     /* justify-content: flex-start; */
     /* border: .1px solid ${(props) => props.theme.fontColor}; */
@@ -41,7 +41,7 @@ const LeftNav = styled.div`
 const RightNav = styled.div`
     width: fit-content;
     height: fit-content;
-    margin-right: 40px;
+    margin-right: 20px;
     display: flex;
     justify-content: flex-end;
     /* border: .1px solid ${(props) => props.theme.fontColor}; */

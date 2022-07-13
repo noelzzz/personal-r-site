@@ -70,7 +70,7 @@ export default ContactSection;
 
 const ContactContainer = styled.div`
     display: grid;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     flex-direction: row;
     place-items: center;
