@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StyledProjectsSection = styled.div`
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;

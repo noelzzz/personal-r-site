@@ -1,13 +1,14 @@
+import React,{ forwardRef } from 'react';
 import styled from 'styled-components';
 import { Fade } from 'react-reveal';
 
 
 
 
-function ContactSection() {
+function ContactSection(props,ref)  {
     return ( 
     <Fade>
-    <ContactContainer>
+    <ContactContainer ref={ref}>
         
         <ContactSpace>
 
@@ -64,7 +65,7 @@ function ContactSection() {
 }
 
 /* Designed & built by Noel using React.js */
-export default ContactSection;
+export default forwardRef(ContactSection);
 
 
 

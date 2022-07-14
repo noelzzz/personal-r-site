@@ -1,15 +1,16 @@
 import React from 'react'
+import {forwardRef} from 'react'
 import { Fade } from 'react-reveal'
 import styled from 'styled-components'
 import resumeFile from './Noel Alfaro Resume 2022.pdf'
 
-export default function AboutSection(props) {
+function AboutSection(props,ref) {
 
 
   return (
     
-    <Fade>
-    <AboutContainer>
+    <Fade effect="fadeInUp">
+    <AboutContainer ref={ref}>
       
       
         <Skills> 
@@ -106,11 +107,12 @@ export default function AboutSection(props) {
     
   )
 }
+export default forwardRef(AboutSection);
 
 // Section
 const AboutContainer = styled.div`
     display: flex;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     justify-content: space-evenly;
     flex-direction: row;
@@ -166,7 +168,7 @@ const Skills = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;  
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     align-items: center;
     /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
@@ -216,7 +218,7 @@ const Education = styled.div`
   width: 45%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
   border-radius: 12px;

@@ -2,13 +2,14 @@ import { StyledHeroSection } from '../../styles/Hero/StyledHeroSection';
 // import { HeroContainer } from '../../styles/Hero/HeroContainer';
 import  AboutMeText  from '../../styles/Hero/StyledAboutMeText';
 import { HeroImage } from '../../styles/Hero/StyledHeroImage';
+import { forwardRef } from 'react';
 import { Fade } from 'react-reveal';
 import 'animate.css'
 import { HeroContainer } from '../../styles/Hero/HeroContainer';
 // import { Intro } from '../../styles/Hero/Intro';
 
 
-function HeroSection(props) {
+function HeroSection(props,ref) {
 
 
     // const handleMouseEnter =()=>{
@@ -30,7 +31,7 @@ function HeroSection(props) {
 
     // }
     return ( 
-        <StyledHeroSection>
+        <StyledHeroSection ref={ref}>
            
             
             <HeroContainer>
@@ -49,4 +50,4 @@ function HeroSection(props) {
     );
 }
 
-export default HeroSection;
+export default forwardRef(HeroSection);

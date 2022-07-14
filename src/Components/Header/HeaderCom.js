@@ -4,13 +4,13 @@ import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import {Link } from "react-router-dom";
 
 
 
 
 function HeaderCom(props) {
-    
+
 
     return(
     <>  
@@ -31,21 +31,24 @@ function HeaderCom(props) {
                         </Route> */}
                     {/* </Routes>
                 </Router> */}
-                
-                    <NavItem>
+                {/* <Link to={'/'}> */}
+                    <NavItem onClick={props.onNoelClick}>
+                        
                         Noel Alfaro
+                        
                     </NavItem>
-                    
+                {/* </Link> */}
+                
               
-                    <NavItem>
+                    <NavItem onClick={props.onProjectsClick}>
                         Projects
                     </NavItem>
 
-                    <NavItem>
+                    <NavItem onClick={props.onAboutClick}>
                         About    
                     </NavItem>
 
-                    <NavItem>
+                    <NavItem onClick={props.onContactClick}>
                          Contact   
                     </NavItem>
                 
@@ -101,12 +104,13 @@ const IconContainer = styled.div`
     justify-content: flex-end;
 `
 
-const NavItem = styled.div`
-    /* word-wrap: nowrap; */
-    /* word-break: keep-all; */
+const NavItem = styled.li`
+    list-style-type: none;
+    white-space: nowrap;
     width: fit-content;
     cursor: pointer;
     margin: 2%;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* font-size: 18px; */
 
 
