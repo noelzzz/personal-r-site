@@ -114,6 +114,13 @@ const NavItem = styled.li`
     /* font-size: 18px; */
 
 
+    &:hover{
+        -webkit-text-decoration: slateblue solid underline;
+        text-decoration: slateblue solid underline;
+        -webkit-text-underline-position: under;
+        text-underline-position: under;
+}
+    
     /* &:active{
         background-color: ${ (props) => props.theme =  lightTheme ?  darkTheme.backgroundColor : lightTheme.backgroundColor};
         color: ${ (props) => props.theme =  lightTheme ?  darkTheme.fontColor : lightTheme.fontColor};
