@@ -13,6 +13,8 @@ import FooterCom from './Components/Footer/FooterCom';
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // import Project1 from './Components/ProjectsSection/Project1';
 import { useRef } from "react";
+// import Scrollspy from "react-scrollspy-highlight"
+// import Scrollspy from "react-scrollspy-highlight"
 // import ScrollToTop from './Components/ScrollToTop';
 
 
@@ -29,8 +31,17 @@ function App() {
   const contactRef = useRef();
 
 
+  const [sectionActive, setSectionActive] = useState('noel');
+
+  // const changeNavActive = () =>{
+  //   if()
+  // }
+
+
+
   const handleNoelClick = () =>{
     noelRef.current.scrollIntoView({behavior:'smooth'})
+
   }
 
   const handleProjectsClick = () =>{
@@ -87,9 +98,6 @@ function App() {
 
   return (
       <>
-
-
-
       
       <GlobalStyles mode={darkMode} theme={currentTheme}/>
 
@@ -99,7 +107,8 @@ function App() {
         onAboutClick={handleAboutClick} 
         onContactClick={handleContactClick}
         mode={darkMode} 
-        theme={currentTheme}/>
+        theme={currentTheme}
+        sectionActive={sectionActive}/>
 
       <HeroSection ref={noelRef}/>
 
@@ -120,11 +129,6 @@ function App() {
       <ContactSection ref={contactRef}/>
 
       <FooterCom/>
-
-      
-    
-
-      
 
         
       </>

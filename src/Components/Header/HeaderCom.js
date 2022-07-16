@@ -5,11 +5,18 @@ import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from '../../themes';
 // import {Link } from "react-router-dom";
+// import Scrollspy from "react-scrollspy-highlight"
 
 
 
 
 function HeaderCom(props) {
+
+    const changeNavActive = () => {
+        if(props.sectionActive === 'noel'){
+            console.log("noel section")
+        }
+    }
 
 
     return(
@@ -20,24 +27,12 @@ function HeaderCom(props) {
             
                 <ItemContainer>
                     
-
-                {/* <Router>
-                    <Routes>
-                        <Route path="/" exact component={HeroSection}>
-
-                        </Route> */}
-                        {/* <Route exact path={["/#Hero", "/#Projects", "/#About", "/#Contact"]}>
-
-                        </Route> */}
-                    {/* </Routes>
-                </Router> */}
-                {/* <Link to={'/'}> */}
-                    <NavItem onClick={props.onNoelClick}>
+                    
+                    <NavItem onClick={props.onNoelClick} >
                         
                         Noel Alfaro
                         
                     </NavItem>
-                {/* </Link> */}
                 
               
                     <NavItem onClick={props.onProjectsClick}>
@@ -51,6 +46,8 @@ function HeaderCom(props) {
                     <NavItem onClick={props.onContactClick}>
                          Contact   
                     </NavItem>
+
+                
                 
                 </ItemContainer>
                 
