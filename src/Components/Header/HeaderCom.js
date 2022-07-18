@@ -110,21 +110,22 @@ const NavItem = styled.li`
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* font-size: 18px; */
     text-decoration: none;
-    background-image: linear-gradient(to right, #000, #000);
+    background-image: linear-gradient(to left, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .5s ease;
+    background-size: 0%;
+    transition: background-size .2s ease;
 
-    &:hover{
-        /* -webkit-text-decoration: slateblue solid underline;
-        text-decoration: slateblue solid underline;
-        -webkit-text-underline-position: under;
-        text-underline-position: under; */
-        background-size: 100% 2px;
 
+
+    :hover{
         
-}
+    }
+    &:hover{
+        background-size: 100% ;
+        color: ${darkTheme.fontColor};
+    }
+        
     
     /* &:active{
         background-color: ${ (props) => props.theme =  lightTheme ?  darkTheme.backgroundColor : lightTheme.backgroundColor};

@@ -1,6 +1,7 @@
 import React,{ forwardRef } from 'react';
 import styled from 'styled-components';
 import { Fade } from 'react-reveal';
+import { lightTheme, darkTheme } from '../../themes';
 
 
 
@@ -117,18 +118,18 @@ const Text = styled.p`
     justify-content: center;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     height: fit-content;
-
-
     text-decoration: none;
-    background-image: linear-gradient(to right, #000, #000);
+    background-image: linear-gradient(to left, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 0% 3px;
-    transition: background-size .5s ease;
+    background-size: 0%;
+    transition: background-size .2s ease;
 
-
+    a:hover{
+        color: ${darkTheme.fontColor};
+    }
     &:hover{
-        background-size: 100% 3px;
+        background-size: 100% ;
     }
 `
 
