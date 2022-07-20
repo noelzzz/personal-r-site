@@ -13,6 +13,6 @@ import styled from "styled-components";
   img{
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
   }
 `

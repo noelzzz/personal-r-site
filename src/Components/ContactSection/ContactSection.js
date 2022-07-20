@@ -1,7 +1,7 @@
 import React,{ forwardRef } from 'react';
 import styled from 'styled-components';
 import { Fade } from 'react-reveal';
-import { lightTheme, darkTheme } from '../../themes';
+import { darkTheme } from '../../themes';
 
 
 
@@ -112,6 +112,7 @@ const ContactTextContainer = styled.div`
     justify-content: space-evenly;
 `
 
+
 const Text = styled.p`
     width: 30%;
     display: flex;
@@ -119,16 +120,18 @@ const Text = styled.p`
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     height: fit-content;
     text-decoration: none;
-    background-image: linear-gradient(to left, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
+    background-image: linear-gradient(to left, ${((props) => props.theme.fontColor)} , ${((props) => props.theme.fontColor)});
+    /* background-image: ${(props) => props.theme.fontColor}; */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0%;
     transition: background-size .2s ease;
 
     a:hover{
-        color: ${darkTheme.fontColor};
+        color: ${((props) => props.theme.backgroundColor)};
     }
     &:hover{
+        color: ${(props) => props.theme.backgroundColor};
         background-size: 100% ;
     }
 `
@@ -143,11 +146,13 @@ const ContactNavItem = styled.div`
     text-decoration: none;
 
     &:hover{
-        
+        /* color: ${darkTheme.fontColor}; */
     }
+    
 
     a{
-        text-decoration: none;
+        /* background-size: 100% ;
+        text-decoration: none; */
     }
 
     

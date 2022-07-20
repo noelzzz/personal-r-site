@@ -12,11 +12,11 @@ import { lightTheme, darkTheme } from '../../themes';
 
 function HeaderCom(props) {
 
-    const changeNavActive = () => {
-        if(props.sectionActive === 'noel'){
-            console.log("noel section")
-        }
-    }
+    // const changeNavActive = () => {
+    //     if(props.sectionActive === 'noel'){
+    //         console.log("noel section")
+    //     }
+    // }
 
 
     return(
@@ -99,30 +99,38 @@ const IconContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 
 const NavItem = styled.li`
     list-style-type: none;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 1%;
     width: fit-content;
+    height: 60%;
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     cursor: pointer;
     margin: 2%;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* font-size: 18px; */
     text-decoration: none;
-    background-image: linear-gradient(to left, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
-    background-position: bottom left;
+    background-image: linear-gradient(to right, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
+    /* background-position: top-right;   */
     background-repeat: no-repeat;
+    border-radius: 20px;
     background-size: 0%;
-    transition: background-size .2s ease;
+    transition: background-size .3s ease-in;
 
 
 
-    :hover{
+    &:hover{
         
     }
     &:hover{
         background-size: 100% ;
+        transition: color .1s ease-in;
         color: ${darkTheme.fontColor};
     }
         

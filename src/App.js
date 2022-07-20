@@ -31,7 +31,7 @@ function App() {
   const contactRef = useRef();
 
 
-  const [sectionActive, setSectionActive] = useState('noel');
+  // const [sectionActive, setSectionActive] = useState('noel');
 
   // const changeNavActive = () =>{
   //   if()
@@ -108,7 +108,7 @@ function App() {
         onContactClick={handleContactClick}
         mode={darkMode} 
         theme={currentTheme}
-        sectionActive={sectionActive}/>
+        />
 
       <HeroSection ref={noelRef}/>
 
@@ -126,7 +126,7 @@ function App() {
         changeThemeLeave={changeThemeLeave} 
         currentTheme={currentTheme}/>
 
-      <ContactSection ref={contactRef}/>
+      <ContactSection ref={contactRef} theme={currentTheme}/>
 
       <FooterCom/>
 

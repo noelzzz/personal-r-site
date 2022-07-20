@@ -263,7 +263,7 @@ const Minor = styled.p`
   font-size: 24px;
   margin: 0;
 `
-const CourseWork = styled.p`
+const CourseWork = styled.div`
   font-size: 24px;
   margin: 0;
 `
