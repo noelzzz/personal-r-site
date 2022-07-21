@@ -49,7 +49,7 @@ function App() {
   }
 
   const handleAboutClick = () =>{
-    console.log('fuck the police again')
+    // console.log('fuck the police again')
     aboutRef.current.scrollIntoView({behavior:'smooth'})
   }
 

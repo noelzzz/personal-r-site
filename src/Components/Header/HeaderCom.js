@@ -3,7 +3,7 @@ import StyledHeaderCom from '../../styles/Header/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
-import { lightTheme, darkTheme } from '../../themes';
+// import { lightTheme, darkTheme } from '../../themes';
 // import {Link } from "react-router-dom";
 // import Scrollspy from "react-scrollspy-highlight"
 
@@ -12,11 +12,6 @@ import { lightTheme, darkTheme } from '../../themes';
 
 function HeaderCom(props) {
 
-    // const changeNavActive = () => {
-    //     if(props.sectionActive === 'noel'){
-    //         console.log("noel section")
-    //     }
-    // }
 
 
     return(
@@ -27,25 +22,37 @@ function HeaderCom(props) {
             
                 <ItemContainer>
                     
+
                     
                     <NavItem onClick={props.onNoelClick} >
-                        
-                        Noel Alfaro
-                        
+                        Noel Alfaro    
                     </NavItem>
+                   
+                    
                 
-              
+
+                  
                     <NavItem onClick={props.onProjectsClick}>
                         Projects
                     </NavItem>
+                 
+                    
 
+
+              
                     <NavItem onClick={props.onAboutClick}>
                         About    
                     </NavItem>
+                 
+                    
 
-                    <NavItem onClick={props.onContactClick}>
+
+                
+                        <NavItem onClick={props.onContactClick}>
                          Contact   
-                    </NavItem>
+                        </NavItem>
+                    
+                    
 
                 
                 
@@ -109,36 +116,28 @@ const NavItem = styled.li`
     align-items: center;
     padding: 1%;
     width: fit-content;
-    height: 60%;
+    height: fit-content;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     cursor: pointer;
-    margin: 2%;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    /* font-size: 18px; */
+    margin: 1%;
+    transition: all .1s linear;
     text-decoration: none;
-    background-image: linear-gradient(to right, ${(darkTheme.backgroundColor)} , ${(darkTheme.backgroundColor)});
-    /* background-position: top-right;   */
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-size: 0%;
-    transition: background-size .3s ease-in;
+    border-radius: 8px;
+    border: 1px solid transparent;
 
 
 
     &:hover{
+        scale: 101%;
+        box-sizing: border-box;
+        border: 1px solid ${(props) => props.theme.fontColor};
+        box-shadow: 
+              1px 1px ${(props) => props.theme.fontColor},
+              2px 2px ${(props) => props.theme.fontColor},
+              3px 3px ${(props) => props.theme.fontColor};
+        
         
     }
-    &:hover{
-        background-size: 100% ;
-        transition: color .1s ease-in;
-        color: ${darkTheme.fontColor};
-    }
-        
-    
-    /* &:active{
-        background-color: ${ (props) => props.theme =  lightTheme ?  darkTheme.backgroundColor : lightTheme.backgroundColor};
-        color: ${ (props) => props.theme =  lightTheme ?  darkTheme.fontColor : lightTheme.fontColor};
-    } */
 
 `
 

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const StyledProjectsGallery = styled.div`
-    width: 300vw;
+    width: 280vw;
     height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: all .2s linear;

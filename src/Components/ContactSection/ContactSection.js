@@ -1,7 +1,7 @@
 import React,{ forwardRef } from 'react';
 import styled from 'styled-components';
 import { Fade } from 'react-reveal';
-import { darkTheme } from '../../themes';
+// import { darkTheme } from '../../themes';
 
 
 
@@ -96,10 +96,6 @@ const ContactSpace = styled.div`
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-
-    a{
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
 `
 
 
@@ -114,26 +110,27 @@ const ContactTextContainer = styled.div`
 
 
 const Text = styled.p`
-    width: 30%;
+    width: fit-content;
     display: flex;
+    padding: 1.5%;
     justify-content: center;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     height: fit-content;
     text-decoration: none;
-    background-image: linear-gradient(to left, ${((props) => props.theme.fontColor)} , ${((props) => props.theme.fontColor)});
-    /* background-image: ${(props) => props.theme.fontColor}; */
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: 0%;
-    transition: background-size .2s ease;
+    transition: all .1s linear;
+    border-radius: 8px; 
+    border: 1px solid transparent;
 
-    a:hover{
-        color: ${((props) => props.theme.backgroundColor)};
-    }
     &:hover{
-        color: ${(props) => props.theme.backgroundColor};
-        background-size: 100% ;
+        border: 1px solid ${(props) => props.theme.fontColor};
+        
+        box-shadow: 
+              2px 2px ${(props) => props.theme.fontColor},
+              3px 3px ${(props) => props.theme.fontColor},
+              4px 4px ${(props) => props.theme.fontColor};
     }
+
+
 `
 
 const ContactNavItem = styled.div`
@@ -144,17 +141,6 @@ const ContactNavItem = styled.div`
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-
-    &:hover{
-        /* color: ${darkTheme.fontColor}; */
-    }
-    
-
-    a{
-        /* background-size: 100% ;
-        text-decoration: none; */
-    }
-
     
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
