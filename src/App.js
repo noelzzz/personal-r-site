@@ -80,6 +80,7 @@ function App() {
   },[darkMode])
 
 
+
   // const heroRef = useRef(null); //represents main section
   // const projectsRef = useRef(null); //represents about section
   // const aboutRef = useRef(null); //represents how to use section

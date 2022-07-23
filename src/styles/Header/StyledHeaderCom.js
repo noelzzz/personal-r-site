@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const StyledHeaderCom = styled.div`
     height: 10vh;
+    min-height: 70px;
     width: 100%;
     display: flex;
     flex-direction: row;
