@@ -127,8 +127,10 @@ const AboutContainer = styled.div`
 const AboutMeHeader = styled.h1`
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 90%;
-  margin: 5% 0;
+  height: 10%;
+  /* margin: 5% 0; */
   font-size: 40px;
   /* border: 1px solid ${(props) => props.theme.fontColor};  */
 `
@@ -164,11 +166,12 @@ const ResumeButton = styled.button`
 
 // Skills
 const Skills = styled.div`
-    height: 90%;
+    height: 80%;
     width: 50%;
     display: flex;
     flex-direction: column;  
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 50px;
     align-items: center;
     /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
@@ -176,7 +179,7 @@ const Skills = styled.div`
 `
 const Languages = styled.div`
   width: 95%;
-  height: 30%;
+  /* height: 25%; */
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   font-size: 28px;
   display: flex;
@@ -214,22 +217,23 @@ const SvgContainer2 = styled.div`
 
 // Education
 const Education = styled.div`
-  height: 90%;
+  height: 80%;
   width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 50px;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
   border-radius: 12px;
 `
 
 const Credentials = styled.div`
-  height: 70%;
+  height: 600px;
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 
   h1{
@@ -258,18 +262,22 @@ const Major = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const Minor = styled.p`
   font-size: 24px;
   margin: 0;
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const CourseWork = styled.p`
   font-size: 24px;
   margin: 0;
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const Course = styled.p`
   font-size: 24px;
   margin: 0;
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 
 
