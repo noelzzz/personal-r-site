@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledProjectsGallery = styled.div`
     width: 280vw;
-    /* min-width: 600px; */
     height: 80vh;
     display: flex;
     flex-direction: row;

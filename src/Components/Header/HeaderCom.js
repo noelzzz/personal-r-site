@@ -96,6 +96,7 @@ const ItemContainer = styled.div`
     align-items: center;
     font-weight: 700;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
 `
@@ -107,6 +108,7 @@ const IconContainer = styled.div`
     align-items: center;
     justify-content: flex-end;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 `
 
 const NavItem = styled.li`
