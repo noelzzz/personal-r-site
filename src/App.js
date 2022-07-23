@@ -3,19 +3,14 @@ import HeaderCom from './Components/Header/HeaderCom';
 import React, { useState,useEffect } from 'react';
 import { GlobalStyles } from './styles/global';
 import {lightTheme, darkTheme} from './themes'
-// import { Container } from './styles/Container.style';
 import HeroSection from './Components/Hero/HeroSection';
 import 'animate.css'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection';
 import AboutSection from './Components/AboutSection/AboutSection';
 import ContactSection from './Components/ContactSection/ContactSection';
 import FooterCom from './Components/Footer/FooterCom';
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import Project1 from './Components/ProjectsSection/Project1';
 import { useRef } from "react";
-// import Scrollspy from "react-scrollspy-highlight"
-// import Scrollspy from "react-scrollspy-highlight"
-// import ScrollToTop from './Components/ScrollToTop';
+
 
 
 
