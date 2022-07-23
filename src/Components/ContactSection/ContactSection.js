@@ -112,6 +112,7 @@ const ContactContainer = styled.div`
 const ContactSpace = styled.div`
     width: 60%;
     height: 80%;
+    max-height: 90%;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     display: flex;
     flex-direction: row;

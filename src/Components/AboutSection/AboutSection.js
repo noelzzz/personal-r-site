@@ -171,7 +171,7 @@ const Skills = styled.div`
     display: flex;
     flex-direction: column;  
     justify-content: flex-start;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
     /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
@@ -230,10 +230,12 @@ const Education = styled.div`
 
 const Credentials = styled.div`
   height: 600px;
+  max-height: 600px;
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 35px;
   align-items: flex-start;
 
   h1{
