@@ -250,6 +250,7 @@ const Credentials = styled.div`
 `
 const School = styled.h1`
   font-size: 28px;
+  font-weight: 500;
   text-align: left;
   margin: 0;
   width: fit-content;
@@ -259,6 +260,7 @@ const School = styled.h1`
 `
 const Major = styled.p`
   font-size: 24px;
+  font-weight: 400;
   margin: 0;
   width: fit-content;
   display: flex;
@@ -268,11 +270,13 @@ const Major = styled.p`
 `
 const Minor = styled.p`
   font-size: 24px;
+  font-weight: 400;
   margin: 0;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `
 const CourseWork = styled.p`
   font-size: 24px;
+  font-weight: 400;
   margin: 0;
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
 `

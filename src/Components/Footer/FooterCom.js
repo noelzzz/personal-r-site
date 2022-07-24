@@ -25,6 +25,7 @@ const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: 400;
 `
 
 const LeftNav = styled.div`
@@ -35,7 +36,7 @@ const LeftNav = styled.div`
     /* justify-content: flex-start; */
     /* border: .1px solid ${(props) => props.theme.fontColor}; */
     font-size: 18px;
-    font-weight: 600;
+    /* font-weight: 600; */
 `
 
 const RightNav = styled.div`
@@ -46,5 +47,5 @@ const RightNav = styled.div`
     justify-content: flex-end;
     /* border: .1px solid ${(props) => props.theme.fontColor}; */
     font-size: 22px;
-    font-weight: 600;
+    /* font-weight: 600; */
 `

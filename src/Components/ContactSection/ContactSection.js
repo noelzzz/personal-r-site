@@ -153,6 +153,7 @@ const Text = styled.p`
     transition: all .1s linear;
     border-radius: 8px; 
     border: 1px solid transparent;
+    font-weight: 600;
 
     &:hover{
         border: 1px solid ${(props) => props.theme.fontColor};
@@ -178,13 +179,13 @@ const Email = styled.p`
     border-radius: 8px; 
     border: 1px solid transparent;
     /* font-family: 'Krona One', sans-serif; */
-    font-weight: 600;
+    font-weight: 500;
 `
 
 
 const ContactNavItemLeft = styled.div`
     font-size: 28px;
-    font-weight: 700;
+    /* font-weight: 700; */
     width: 50%;
     display: flex;
     justify-content: space-evenly;
