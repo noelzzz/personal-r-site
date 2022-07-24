@@ -177,6 +177,8 @@ const Email = styled.p`
     transition: all .1s linear;
     border-radius: 8px; 
     border: 1px solid transparent;
+    /* font-family: 'Krona One', sans-serif; */
+    font-weight: 600;
 `
 
 
@@ -204,7 +206,7 @@ const ContactNavItemRight = styled.div`
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-decoration: none;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
