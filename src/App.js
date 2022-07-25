@@ -26,14 +26,6 @@ function App() {
   const contactRef = useRef();
 
 
-  // const [sectionActive, setSectionActive] = useState('noel');
-
-  // const changeNavActive = () =>{
-  //   if()
-  // }
-
-
-
   const handleNoelClick = () =>{
     noelRef.current.scrollIntoView({behavior:'smooth'})
 
@@ -44,7 +36,6 @@ function App() {
   }
 
   const handleAboutClick = () =>{
-    // console.log('fuck the police again')
     aboutRef.current.scrollIntoView({behavior:'smooth'})
   }
 
@@ -78,16 +69,6 @@ function App() {
         setCurrentTheme(lightTheme)
       }
   },[darkMode])
-
-
-  // const heroRef = useRef(null); //represents main section
-  // const projectsRef = useRef(null); //represents about section
-  // const aboutRef = useRef(null); //represents how to use section
-  // const contactRef = useRef(null); //represents how to use section
-
-
- 
-
 
 
 

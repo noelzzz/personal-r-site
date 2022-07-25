@@ -32,8 +32,6 @@ const LeftNav = styled.div`
     width: fit-content;
     height: fit-content;
     margin-left: 20px;
-    /* align-items: flex-start; */
-    /* justify-content: flex-start; */
     /* border: .1px solid ${(props) => props.theme.fontColor}; */
     font-size: 18px;
     /* font-weight: 600; */
