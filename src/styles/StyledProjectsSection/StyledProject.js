@@ -37,6 +37,7 @@ export const StyledProject = styled.div`
 
         a{
         color: ${(props) => props.theme.fontColor};
+        transition: all .2s linear;
         }
     }
     

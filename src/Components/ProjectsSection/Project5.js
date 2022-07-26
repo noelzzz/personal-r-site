@@ -1,5 +1,5 @@
 import React from 'react'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import { ProjectsDescription } from '../../styles/StyledProjectsSection/ProjectsDescription.Style';
 import { ProjectContainer } from '../../styles/StyledProjectsSection/ProjectContainer.style';
 import { StyledProject } from '../../styles/StyledProjectsSection/StyledProject';
@@ -22,10 +22,24 @@ export default function Project5(props) {
     <StyledProject  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ProjectContainer>
             <img src={require("../../images/TW.jpg")} alt="TW.jpeg"/>
-            <ProjectsDescription>Test description 5</ProjectsDescription>
+            <ProjectsDescription>
+              <ProjectTitle>React App</ProjectTitle>
+              <ProjectDetails>This is a react site made in 2022</ProjectDetails> 
+            </ProjectsDescription>
         </ProjectContainer>
         
     </StyledProject>
   )
 }
 
+
+const ProjectTitle = styled.h1`
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
+  margin: 0;
+`
+
+const ProjectDetails = styled.p`
+  /* border: 1px solid ${(props) => props.theme.fontColor}; */
+  width: 90%;
+  margin: 10% 0%;
+`

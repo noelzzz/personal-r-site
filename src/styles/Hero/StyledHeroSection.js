@@ -16,7 +16,8 @@ export const StyledHeroSection = styled.div`
     /* position: rel; */
 
 
-    @media only screen and (max-width: 760px) {
+    @media screen and (max-width: 760px) {
         flex-direction: column;
     }
+
 `

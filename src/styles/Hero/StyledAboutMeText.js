@@ -7,9 +7,9 @@ export default function AboutMeText() {
         <Fade>
         <StyledAboutMeText>
             <Fade top cascade><h1>Hello there,</h1></Fade>
-            <Fade cascade>
-            My name is Noel & welcome to my page. <br /> Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.
-            </Fade>
+            {/* <Fade cascade> */}
+            My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.
+            {/* </Fade> */}
         </StyledAboutMeText>
         </Fade>
     );
@@ -18,8 +18,8 @@ export default function AboutMeText() {
 
 
 const StyledAboutMeText = styled.div`
-    width: 450px;
-    min-width: 350px;
+    width: fit-content;
+    min-width: 450px;
     height: 350px;
     padding: 5px;
     line-height: 2;
@@ -43,11 +43,25 @@ const StyledAboutMeText = styled.div`
         font-size: 40px;
     }
 
-    /* p{
-        border: 1px solid ${(props) => props.theme.fontColor};
+    p{
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
         line-height: 2;
-    } */
-    
+        text-align: center;
+    word-break: keep-all;
+    white-space: pre-wrap;
+    }
+
+
+    @media screen and (max-width: 760px) {
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        font-size: 12px;
+
+        h1{
+            font-size: 28px;
+        }
+    }
 
 
 `

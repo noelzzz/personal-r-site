@@ -22,4 +22,16 @@ export const HeroImage = styled.div`
         width: 300px;
         height: 300px;
     }
+
+
+
+    @media screen and (max-width: 760px) {
+        flex-direction: column;
+
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
 `

@@ -26,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: ${(props) => props.theme.fontColor};
     text-decoration: none;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   }
 
