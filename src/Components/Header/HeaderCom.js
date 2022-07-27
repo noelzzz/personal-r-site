@@ -98,6 +98,12 @@ const ItemContainer = styled.div`
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    @media screen and (max-width: 760px) {
+        font-size: 12px;
+        width: 30%;
+        padding: 2%;
+    }
+
 
 `
 const IconContainer = styled.div`
@@ -109,6 +115,13 @@ const IconContainer = styled.div`
     justify-content: flex-end;
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+    @media screen and (max-width: 760px) {
+        font-size: 12px;
+        width: 30%;
+        padding: 2%;
+    }
 `
 
 const NavItem = styled.li`

@@ -16,6 +16,17 @@ const StyledHeaderCom = styled.div`
     background-color: ${(props) => props.theme.backgroundColor};
     border-bottom: .1px groove ${(props) => props.theme.fontColor};
     z-index: 10;
+
+
+    @media screen and (max-width: 760px) {
+        font-size: 16px;
+        flex-wrap: wrap;
+        
+        border: 1px solid ${(props) => props.theme.fontColor};
+
+        
+    }
+
 `;
 
 

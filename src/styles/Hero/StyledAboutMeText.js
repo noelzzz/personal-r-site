@@ -19,7 +19,7 @@ export default function AboutMeText() {
 
 const StyledAboutMeText = styled.div`
     width: fit-content;
-    min-width: 450px;
+    min-width: 350px;
     height: 350px;
     padding: 5px;
     line-height: 2;
@@ -47,16 +47,17 @@ const StyledAboutMeText = styled.div`
         /* border: 1px solid ${(props) => props.theme.fontColor}; */
         line-height: 2;
         text-align: center;
-    word-break: keep-all;
-    white-space: pre-wrap;
+        word-break: keep-all;
+        white-space: pre-wrap;
     }
 
 
     @media screen and (max-width: 760px) {
         flex-direction: column;
-        width: 300px;
+        width: 100px;
         height: 150px;
         font-size: 12px;
+        border: 1px solid ${(props) => props.theme.fontColor};
 
         h1{
             font-size: 28px;
