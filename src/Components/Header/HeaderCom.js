@@ -3,6 +3,8 @@ import StyledHeaderCom from '../../styles/Header/StyledHeaderCom';
 import DayNightIcon from './DayNightIcon';
 import { Fade } from 'react-reveal';
 import styled from 'styled-components';
+import { device } from '../../styles/breakpoints';
+import MenuIcon from './MenuIcon';
 // import { lightTheme, darkTheme } from '../../themes';
 // import {Link } from "react-router-dom";
 // import Scrollspy from "react-scrollspy-highlight"
@@ -18,7 +20,9 @@ function HeaderCom(props) {
     <>  
     <Fade cascade>
             <StyledHeaderCom theme={props.theme}>
-
+            <MenuIconContainer>
+                <MenuIcon></MenuIcon>
+            </MenuIconContainer>
             
                 <ItemContainer>
                     
@@ -85,6 +89,27 @@ export default HeaderCom;
 
 
 
+const MenuIconContainer = styled.div`
+    display: none;
+    height: fit-content;
+    width: 50%;
+    padding: 3%;
+    border: 1px solid ${(props) => props.theme.fontColor};
+    
+
+    @media ${device.mobileL} {
+        height: 90%;
+        display: block;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        
+        /* padding: 2%; */
+    }
+
+`
+
+
 
 const ItemContainer = styled.div`
     width: 35%;
@@ -98,11 +123,19 @@ const ItemContainer = styled.div`
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    @media screen and (max-width: 760px) {
-        font-size: 12px;
-        width: 30%;
-        padding: 2%;
+    @media ${device.laptop} {
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+        font-size: 16px;
+        width: 80%;
+        /* padding: 2%; */
     }
+
+    @media ${device.mobileL} {
+        display: none;
+        /* padding: 2%; */
+    }
+
+
 
 
 `
@@ -117,10 +150,20 @@ const IconContainer = styled.div`
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
-    @media screen and (max-width: 760px) {
+    @media ${device.laptop}  {
         font-size: 12px;
-        width: 30%;
+        width: 20%;
         padding: 2%;
+        justify-content: center;
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    }
+
+
+    @media ${device.mobileL} {
+        width: 50%;
+        justify-content: flex-end;
+        border: 1px solid ${(props) => props.theme.fontColor};
+        /* padding: 2%; */
     }
 `
 

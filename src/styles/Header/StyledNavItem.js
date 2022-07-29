@@ -1,6 +1,6 @@
-import styled from "styled-components";
+// import styled from "styled-components";
 
 
-export const StyledNavItem = styled.li`
-    margin: auto;
-`
+// export const StyledNavItem = styled.li`
+//     margin: auto;
+// `

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Fade } from "react-reveal";
+import { device } from "../breakpoints";
 
 
 export default function AboutMeText() {
@@ -52,7 +53,7 @@ const StyledAboutMeText = styled.div`
     }
 
 
-    @media screen and (max-width: 760px) {
+    @media ${device.tablet}{
         flex-direction: column;
         width: 100px;
         height: 150px;

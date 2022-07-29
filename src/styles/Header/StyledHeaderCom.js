@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../breakpoints";
 
 // import HeaderCom from "../Components/HeaderCom";
 
@@ -18,11 +19,11 @@ const StyledHeaderCom = styled.div`
     z-index: 10;
 
 
-    @media screen and (max-width: 760px) {
-        font-size: 16px;
-        flex-wrap: wrap;
-        
-        border: 1px solid ${(props) => props.theme.fontColor};
+    @media  ${device.laptop}{
+        /* font-size: 16px; */
+        /* flex-wrap: wrap; */
+        /* color:red; */
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
 
         
     }

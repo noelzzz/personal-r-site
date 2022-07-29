@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../breakpoints";
 
 
 
@@ -25,7 +26,7 @@ export const HeroImage = styled.div`
 
 
 
-    @media screen and (max-width: 760px) {
+    @media ${device.tablet} {
         flex-direction: column;
 
 

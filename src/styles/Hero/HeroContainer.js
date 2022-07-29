@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { device } from '../breakpoints';
 
 
 export const HeroContainer = styled.div`
-    border: 1px solid ${(props) => props.theme.fontColor}; 
+    /* border: 1px solid ${(props) => props.theme.fontColor};  */
     width: 800px;
     height: 80%;
     display: flex;
@@ -12,9 +13,9 @@ export const HeroContainer = styled.div`
 
 
 
-    @media screen and (max-width: 760px) {
+    @media  ${device.tablet}{
         flex-direction: column;
-        width: 400px;
+        width: 300px;
     }
 
 `

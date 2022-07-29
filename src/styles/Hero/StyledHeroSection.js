@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { device } from "../breakpoints"
 
 export const StyledHeroSection = styled.div`
     /* margin-top: 10vh; */
@@ -16,7 +17,7 @@ export const StyledHeroSection = styled.div`
     /* position: rel; */
 
 
-    @media screen and (max-width: 760px) {
+    @media ${device.tablet}{
         flex-direction: column;
     }
 

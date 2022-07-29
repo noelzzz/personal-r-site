@@ -112,7 +112,7 @@ export default forwardRef(AboutSection);
 // Section
 const AboutContainer = styled.div`
     display: flex;
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     justify-content: space-evenly;
     flex-direction: row;
