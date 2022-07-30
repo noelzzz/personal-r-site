@@ -4,14 +4,15 @@ import { device } from "../breakpoints";
 
 
 export const HeroImage = styled.div`
-    width: fit-content;
-    height: fit-content;
+    width: 50%;
+    cursor: pointer;
+    /* height: fit-content; */
     /* padding: 2%; */
     /* line-height: 2.5; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    border: 1px solid ${(props) => props.theme.fontColor};
     /* align-items: center; */
     /* margin-left: 50px; */
     /* color: blue; */

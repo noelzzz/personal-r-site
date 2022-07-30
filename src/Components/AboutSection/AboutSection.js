@@ -3,6 +3,7 @@ import {forwardRef} from 'react'
 import { Fade } from 'react-reveal'
 import styled from 'styled-components'
 import resumeFile from './Noel Alfaro Resume 2022.pdf'
+import { device } from '../../styles/breakpoints'
 
 function AboutSection(props,ref) {
 
@@ -123,16 +124,30 @@ const AboutContainer = styled.div`
       width: 50px;
     }
 
+
+    @media ${device.tablet} {
+        flex-direction: column;
+        
+    }
+
 `
-const AboutMeHeader = styled.h1`
+const AboutMeHeader = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
-  height: 10%;
+  width: 100%;
+  /* height: 10%; */
   /* margin: 5% 0; */
+  /* font-size: 40px; */
   font-size: 40px;
-  /* border: 1px solid ${(props) => props.theme.fontColor};  */
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid ${(props) => props.theme.fontColor};
+  
+  
+  @media ${device.tablet} {
+    font-size: 25px;
+    }
 `
 
 
@@ -176,6 +191,11 @@ const Skills = styled.div`
     /* border: 1px solid ${(props) => props.theme.fontColor};   */
     border-radius: 12px;
     transition: all .2s linear;
+
+
+    @media ${device.tablet} {
+        width: 100vw;
+    }
 `
 const Languages = styled.div`
   width: 95%;
@@ -186,6 +206,10 @@ const Languages = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 5%;
+
+  @media ${device.tablet} {
+      width: 100%;
+    }
 `
 const SvgContainer = styled.div`
   width: 95%;
@@ -218,7 +242,7 @@ const SvgContainer2 = styled.div`
 // Education
 const Education = styled.div`
   height: 80%;
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -226,6 +250,11 @@ const Education = styled.div`
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   align-items: center;
   border-radius: 12px;
+
+
+  @media ${device.tablet} {
+        width: 100vw;
+    }
 `
 
 const Credentials = styled.div`
@@ -238,15 +267,15 @@ const Credentials = styled.div`
   gap: 35px;
   align-items: flex-start;
 
-  h1{
+  /* h1{
     margin: 0px 0px 0px 30px;
   }
 
   p{
     margin: 0px 0px 0px 30px;
-  }
+  } */
 
-  /* border: 1px solid ${(props) => props.theme.fontColor};  */
+  border: 1px solid ${(props) => props.theme.fontColor}; 
 `
 const School = styled.h1`
   font-size: 28px;

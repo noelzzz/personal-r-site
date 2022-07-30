@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/breakpoints';
 
 import React from 'react'
 
@@ -26,6 +27,10 @@ const FooterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
+
+    @media ${device.tablet} {
+        flex-direction: column;
+    }
 `
 
 const LeftNav = styled.div`

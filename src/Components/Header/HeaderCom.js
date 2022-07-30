@@ -112,7 +112,7 @@ const MenuIconContainer = styled.div`
 
 
 const ItemContainer = styled.div`
-    width: 35%;
+    width: 45%;
     height: 90%;
     font-size: 20px;
     display: flex;
@@ -140,7 +140,7 @@ const ItemContainer = styled.div`
 
 `
 const IconContainer = styled.div`
-    width: 65%;
+    width: 55%;
     height: 90%;
     display: flex;
     flex-direction: row;

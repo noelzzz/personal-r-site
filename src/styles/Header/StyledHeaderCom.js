@@ -6,7 +6,7 @@ import { device } from "../breakpoints";
 const StyledHeaderCom = styled.div`
     height: 10vh;
     min-height: 70px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);

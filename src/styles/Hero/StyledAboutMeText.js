@@ -19,10 +19,12 @@ export default function AboutMeText() {
 
 
 const StyledAboutMeText = styled.div`
-    width: fit-content;
-    min-width: 350px;
-    height: 350px;
-    padding: 5px;
+    /* width: fit-content; */
+    width: 50%;
+    /* min-width: 350px; */
+    height: 30%;
+    /* height: fit-content; */
+    padding: 100px;
     line-height: 2;
     font-size: 20px;
 
@@ -34,7 +36,7 @@ const StyledAboutMeText = styled.div`
     flex-direction: column;
     /* position: relative; */
     justify-content: center;
-    /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    border: 1px solid ${(props) => props.theme.fontColor};
     align-items: center;    
 
     h1{
