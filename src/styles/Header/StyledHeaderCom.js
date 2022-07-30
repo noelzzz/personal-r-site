@@ -4,7 +4,7 @@ import { device } from "../breakpoints";
 // import HeaderCom from "../Components/HeaderCom";
 
 const StyledHeaderCom = styled.div`
-    height: 10vh;
+    height: 80px;
     min-height: 70px;
     width: 100vw;
     display: flex;

@@ -25,7 +25,7 @@ function HeroSection(props,ref) {
                     </Fade>
                 </HeroImage>
 
-                <AboutMeText><h1>Hello there,</h1> <p>My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.</p></AboutMeText>
+                <AboutMeText><Fade top cascade><h1>Hello there,</h1><p>My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.</p></Fade></AboutMeText>
 
             </HeroContainer>
             
@@ -57,6 +57,7 @@ const HeroContainer = styled.div`
         /* flex-direction: column; */
         /* width: 300px; */
         width: 100%;
+        height: 60%;
     }
 
     @media  ${device.tablet}{
@@ -143,14 +144,14 @@ const HeroImage = styled.div`
 
 
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         flex-direction: column;
         width: 50%;
 
 
         img{
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
         }
     }
 
@@ -161,8 +162,19 @@ const HeroImage = styled.div`
 
 
         img{
-            width: 150px;
-            height: 150px;
+            width: 225px;
+            height: 225px;
+        }
+    }
+
+    @media ${device.mobileM} {
+        flex-direction: column;
+        width: 50%;
+
+
+        img{
+            width: 175px;
+            height: 175px;
         }
     }
 
