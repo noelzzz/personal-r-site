@@ -7,6 +7,7 @@ const StyledHeaderCom = styled.div`
     height: 80px;
     min-height: 70px;
     width: 100vw;
+    max-width: 2560px;
     display: flex;
     flex-direction: row;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -19,11 +20,12 @@ const StyledHeaderCom = styled.div`
     z-index: 10;
 
 
-    @media  ${device.laptop}{
+    @media  ${device.laptopL}{
         /* font-size: 16px; */
         /* flex-wrap: wrap; */
         /* color:red; */
         /* border: 1px solid ${(props) => props.theme.fontColor}; */
+        
 
         
     }

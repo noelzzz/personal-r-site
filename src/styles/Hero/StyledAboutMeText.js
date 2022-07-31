@@ -57,7 +57,7 @@ const StyledAboutMeText = styled.div`
 
     @media ${device.tablet}{
         flex-direction: column;
-        width: 100px;
+        width: 60%;
         height: 150px;
         font-size: 12px;
         border: 1px solid ${(props) => props.theme.fontColor};

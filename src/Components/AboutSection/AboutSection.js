@@ -126,7 +126,9 @@ const AboutContainer = styled.div`
 
 
     @media ${device.tablet} {
+      padding: 15%;
         flex-direction: column;
+      height: 150vh;
         
     }
 
@@ -195,6 +197,7 @@ const Skills = styled.div`
 
     @media ${device.tablet} {
         width: 100vw;
+        height: 50%;
     }
 `
 const Languages = styled.div`
@@ -254,6 +257,7 @@ const Education = styled.div`
 
   @media ${device.tablet} {
         width: 100vw;
+        height: 50%;
     }
 `
 

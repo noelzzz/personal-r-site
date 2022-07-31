@@ -11,7 +11,9 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    min-width: 300px;
+    /* min-width: 300px; */
+    display: flex;
+    justify-content: center;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     color: ${(props) => props.theme.fontColor};

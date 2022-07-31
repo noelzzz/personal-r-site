@@ -25,7 +25,7 @@ function HeroSection(props,ref) {
                     </Fade>
                 </HeroImage>
 
-                <AboutMeText><Fade top cascade><h1>Hello there,</h1><p>My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Engineer and UI/UX Designer.</p></Fade></AboutMeText>
+                <AboutMeText><Fade top cascade><h1>Hey there,</h1></Fade> <Fade>My name is Noel & welcome to my page. Here I showcase some of my work as a Front-End Software Developer and UI/UX Designer.</Fade></AboutMeText>
 
             </HeroContainer>
             
@@ -40,7 +40,7 @@ export default forwardRef(HeroSection);
 
 
 const HeroContainer = styled.div`
-  border: 1px solid ${(props) => props.theme.fontColor}; 
+  /* border: 1px solid ${(props) => props.theme.fontColor};  */
     /* width: 800px; */
     width: 70%;
     height: 80%;
@@ -51,6 +51,11 @@ const HeroContainer = styled.div`
     /* justify-content: ; */
     /* background-color: red; */
 
+
+    @media ${device.desktopL}  {
+        border: 1px solid ${(props) => props.theme.fontColor};
+        width: 50%;
+    }
 
 
     @media  ${device.laptop}{
@@ -63,6 +68,14 @@ const HeroContainer = styled.div`
     @media  ${device.tablet}{
         /* flex-direction: column; */
         width: 100%;
+        /* width: 300px; */
+    }
+
+
+    @media  ${device.mobileM}{
+        /* flex-direction: column; */
+        width: 100%;
+        height: 70%;
         /* width: 300px; */
     }
 `
@@ -86,7 +99,7 @@ const AboutMeText = styled.div`
     flex-direction: column;
     /* position: relative; */
     justify-content: center;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     align-items: center;    
 
     h1{
@@ -104,18 +117,51 @@ const AboutMeText = styled.div`
         white-space: pre-wrap;
     }
 
+    @media ${device.desktopL}  {
+        width: 45%;
+        border: 1px solid ${(props) => props.theme.fontColor};
+    }
+
 
     @media ${device.tablet}{
         /* width: 100px; */
         /* height: 150px; */
-        width: 50%;
+        width: 60%;
         font-size: 12px;
-        border: 1px solid ${(props) => props.theme.fontColor};
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
 
         h1{
             font-size: 28px;
         }
+
+
+        p{
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+        line-height: 2;
+        text-align: center;
+        word-break: keep-all;
+        white-space: pre-wrap;
     }
+    }
+
+    @media ${device.mobileL}{
+        /* width: 100px; */
+        /* height: 150px; */
+        width: 50%;
+        height: 50%;
+        font-size: 10px;
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+
+        h1{
+            font-size: 20px;
+        }
+    }
+
+
+    @media ${device.mobileM} {
+        width: 60%;
+    }
+
 
 `
 
@@ -129,7 +175,7 @@ const HeroImage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     /* align-items: center; */
     /* margin-left: 50px; */
     /* color: blue; */
@@ -143,6 +189,10 @@ const HeroImage = styled.div`
     }
 
 
+    @media ${device.desktopL}  {
+        border: 1px solid ${(props) => props.theme.fontColor};
+        width: 40%;
+    }
 
     @media ${device.laptop} {
         flex-direction: column;
@@ -167,14 +217,50 @@ const HeroImage = styled.div`
         }
     }
 
-    @media ${device.mobileM} {
+
+    @media ${device.tabletS} {
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+
+
+    @media ${device.mobileL} {
         flex-direction: column;
         width: 50%;
 
 
         img{
-            width: 175px;
-            height: 175px;
+            width: 150px;
+            height: 150px;
+            /* width: fit-content; */
+        }
+    }
+
+
+
+    @media ${device.mobileM} {
+        flex-direction: column;
+        width: 40%;
+
+
+        img{
+            width: 125px;
+            height: 125px;
+            /* width: fit-content; */
+        }
+    }
+
+    @media ${device.mobileS} {
+        flex-direction: column;
+
+
+        img{
+            width: 100px;
+            height: 100px;
+            /* width: fit-content; */
         }
     }
 

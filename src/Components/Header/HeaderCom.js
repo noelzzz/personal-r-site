@@ -94,7 +94,7 @@ const MenuIconContainer = styled.div`
     height: fit-content;
     width: 50%;
     padding: 3%;
-    border: 1px solid ${(props) => props.theme.fontColor};
+    /* border: 1px solid ${(props) => props.theme.fontColor}; */
     
 
     @media ${device.mobileL} {
@@ -123,9 +123,21 @@ const ItemContainer = styled.div`
     /* border: 1px solid ${(props) => props.theme.fontColor}; */
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+
+
+    @media ${device.desktopL}  {
+        font-size: 20px;
+        width: 60%;
+        /* height: fit-content; */
+        /* padding: 1%; */
+        justify-content: flex-end;
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    }
+
+
     @media ${device.laptop} {
         /* border: 1px solid ${(props) => props.theme.fontColor}; */
-        font-size: 16px;
+        font-size: 18px;
         width: 80%;
         /* padding: 2%; */
     }
@@ -150,6 +162,15 @@ const IconContainer = styled.div`
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
+    @media ${device.desktopL}  {
+        font-size: 12px;
+        width: 40%;
+        padding: 1%;
+        justify-content: flex-start;
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
+    }
+
+
     @media ${device.laptop}  {
         font-size: 12px;
         width: 20%;
@@ -162,7 +183,7 @@ const IconContainer = styled.div`
     @media ${device.mobileL} {
         width: 50%;
         justify-content: flex-end;
-        border: 1px solid ${(props) => props.theme.fontColor};
+        /* border: 1px solid ${(props) => props.theme.fontColor}; */
         /* padding: 2%; */
     }
 `
