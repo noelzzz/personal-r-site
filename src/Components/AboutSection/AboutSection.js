@@ -138,9 +138,6 @@ const AboutMeHeader = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  /* height: 10%; */
-  /* margin: 5% 0; */
-  /* font-size: 40px; */
   font-size: 40px;
   padding: 10px;
   font-weight: bold;
@@ -202,7 +199,6 @@ const Skills = styled.div`
 `
 const Languages = styled.div`
   width: 95%;
-  /* height: 25%; */
   /* border: 1px solid ${(props) => props.theme.fontColor}; */
   font-size: 28px;
   display: flex;
