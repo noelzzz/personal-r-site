@@ -267,14 +267,6 @@ const Credentials = styled.div`
   gap: 35px;
   align-items: flex-start;
 
-  /* h1{
-    margin: 0px 0px 0px 30px;
-  }
-
-  p{
-    margin: 0px 0px 0px 30px;
-  } */
-
   border: 1px solid ${(props) => props.theme.fontColor}; 
 `
 const School = styled.h1`
